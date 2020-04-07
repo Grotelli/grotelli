@@ -40,7 +40,7 @@ For inline scripts you need to generate a CSP header. Read more about this in th
 </head>
 <body>
 Just a test
-<amp-script layout="container" src="https://service.force.com/embeddedservice/5.0/esw.min.js">
+
 <style type='text/css'>
 .embeddedServiceHelpButton .helpButton .uiButton {
 	background-color: #005290;
@@ -93,15 +93,9 @@ Just a test
 .embeddedServiceSidebarExtendedHeader .content .message { display:none; }
 </style>
 
-<script>
-(function() {
-	document.getElementById('closeInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); };
-	document.getElementById('rejectInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }; // use this API call to reject invitations
-	document.getElementById('acceptInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.acceptInvite(); }; // use this API call to start chat from invitations
-	document.addEventListener('keyup', function(event) { if (event.keyCode == 27) { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }})
-})();
-</script>  
-<script>
+ 
+	<amp-script layout="container" src="https://service.force.com/embeddedservice/5.0/esw.min.js">
+<script type='text/javascript'>
   var initESW = function(gslbBaseURL) {
 	embedded_svc.settings.displayHelpButton = true; //Or false
 	embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
