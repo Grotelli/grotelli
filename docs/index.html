@@ -41,7 +41,10 @@ For inline scripts you need to generate a CSP header. Read more about this in th
 <body>
 Just a test
 
-<style type='text/css'>
+
+
+ <amp-iframe>
+	 <style type='text/css'>
 .embeddedServiceHelpButton .helpButton .uiButton {
 	background-color: #005290;
 	font-family: "Salesforce Sans", sans-serif;
@@ -92,8 +95,6 @@ Just a test
 .embeddedServiceSidebarExtendedHeader .agentAvatarsContainer,
 .embeddedServiceSidebarExtendedHeader .content .message { display:none; }
 </style>
-
- <amp-iframe>
 	<script src="https://service.force.com/embeddedservice/5.0/esw.min.js">
 <script type='text/javascript'>
   var initESW = function(gslbBaseURL) {
