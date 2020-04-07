@@ -1,103 +1,4040 @@
+
 <!doctype html>
-<html ⚡>
+<html ⚡ lang="en">
 <head>
-<meta charset="utf-8">
-    <link rel="canonical" href="self.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-      <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-	
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="description" content="This is the AMP Boilerplate.">
+<link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
+<link rel="preconnect dns-prefetch" href="https://fonts.gstatic.com/" crossorigin>
 
-      <!--
+<link href="/css/font-awesome.min.css" rel="stylesheet" />
 
-        ## Setup
+<script async src="https://cdn.ampproject.org/v0.js"></script>
 
-        First, you need to import the `amp-script` extension.
-      -->
-      <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-      <style amp-custom>
-        .amp-script-sample {
-          padding: 8px;
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+<script async custom-element="amp-vimeo" src="https://cdn.ampproject.org/v0/amp-vimeo-0.1.js"></script>
+<script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"></script>
+<script async custom-element="amp-geo" src="https://cdn.ampproject.org/v0/amp-geo-0.1.js"></script>
+<script custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js" async></script>
+<script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
+<script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+<script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+<script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+<script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+<script async custom-element="amp-fx-collection" src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"></script>
+<script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
+<script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
+<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+<script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
+<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+<script async custom-element="amp-nested-menu" src="https://cdn.ampproject.org/v0/amp-nested-menu-0.1.js"></script>
+<script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
+<script async custom-element="amp-script" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+
+<meta name="amp-script-src" content="sha384-lcEr1axrGOkJXlLfMBfy8h6FR_hiSgKwFZ_-V-_bYJYIg0-m2aPArIlPOXFB_qkV sha384-ISCguelFfkDAEqQ73FKxXgHlp90PoDVr1rJtVUQ8nkUJQugyNOStylJX-qb-pcGS" />
+
+<style amp-custom>
+       .css-button-rounded {
+    background: #feed34;
+    text-align: center;
+    border-radius: 8px;
+    padding: 9px 8px 9px 8px;
+
+}
+
+/*.css-button-rounded:hover {
+    background: #d6c934;
+}*/
+
+.filterHiddenRes {
+    display: none !important;
+}
+
+.filterDisplayRes {
+    display: block !important;
+}
+
+
+.cta {
+    margin-top: 36px;
+    padding: 24px 24px 0px 24px;
+    background-color: #333;
+    text-align: center;
+}
+
+.box {
+    min-width: 150px;
+    width: 150px;
+    height: 230px;
+    background: #333;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    white-space: normal;
+    /*z-index: 5;*/
+    transition: all .3s cubic-bezier(.25,.1,.25,1);
+    box-sizing: border-box;
+    border: solid 2px #111111;
+}
+
+    .box:hover {
+        border: solid 2px #FEED34;
+    }
+
+
+body {
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+    background-color: #111;
+    color: #999;
+}
+
+h1, h2, h3 {
+    color: #fff;
+    font-size: 1.2em;
+}
+
+p {
+    margin-top: 0px;
+}
+
+a {
+    color: #FEED34;
+    text-decoration: none;
+}
+
+    a:link {
+        color: #FEED34;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #FEED34;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #FEED34;
+        text-decoration: none;
+    }
+
+    a.gray {
+        color: #999;
+        text-decoration: none;
+    }
+
+        a.gray:link {
+            color: #999;
+            text-decoration: none;
         }
-        .amp-script-sample button {
-          background-color: #005AF0;
-          font-size: 16px;
-          font-weight: 700;
-          color: white;
-          border: none;
-          padding: 8px;
-          margin: 8px 0;
+
+        a.gray:hover {
+            color: #999;
+            text-decoration: none;
         }
-        .amp-script-sample button[disabled] {
-          background-color: #f3f3f3;
-          color: #ccc;
+
+        a.gray:active {
+            color: #999;
+            text-decoration: underline;
         }
-      </style>
 
-      <!--
-        For inline scripts you need to generate a CSP header. Read more about this in the [component documentation](/content/amp-dev/documentation/components/reference/amp-script-v0.1.md).
-      -->
-      <meta name="amp-script-src" content="sha384-X8xW7VFd-a-kgeKjsR4wgFSUlffP7x8zpVmqC6lm2DPadWUnwfdCBJ2KbwQn6ADE sha384-nNFaDRiLzgQEgiC5kP28pgiJVfNLVuw-nP3VBV-e2s3fOh0grENnhllLfygAuU_M sha384-u7NPnrcs7p4vsbGLhlYHsId_iDJbcOWxmBd9bhVuPoA_gM_he4vyK6GsuvFvr2ym sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA">
-  </head>
-  <body>
-      <!--
-        ## Basic usage
+        a.gray:visited {
+            color: #999;
+            text-decoration: none;
+        }
 
-        An amp-script element can load a JavaScript file from a URL. This is usually the best way to integrate a script as the browser needs to download the script only once.
-      -->
-      <amp-script layout="container" src="https://service.force.com/embeddedservice/5.0/esw.min.js" class="amp-script-sample">
-	  <script target="amp-script">
-	  var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-		embedded_svc.settings.autoOpenPostChat = true;
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
 
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
+    .sidebar a:link {
+        color: #fff;
+        text-decoration: none;
+    }
 
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
+    .sidebar a:hover {
+        color: #999;
+        text-decoration: none;
+    }
 
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
+    .sidebar a:active {
+        color: #FEED34;
+        text-decoration: underline;
+    }
 
-		embedded_svc.init(
-			'https://gianluca-dev-ed.my.salesforce.com',
-			'https://gianlu-developer-edition.eu18.force.com/',
-			gslbBaseURL,
-			'00D0Y000001kEAn',
-			'Chat_Agents',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-c2-fra.salesforceliveagent.com/content',
-				deploymentId: '5721n0000008jZI',
-				buttonId: '5731n000000CrCj',
-				baseLiveAgentURL: 'https://d.la1-c2-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Agents',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
+    .sidebar a:visited {
+        color: #fff;
+        text-decoration: none;
+    }
 
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://gianluca-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-	</script>
-      </amp-script>
+a.icon {
+    display: inline-flex;
+    vertical-align: middle;
+}
 
-      
-</body></html>
+    a.icon:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+
+input[type="email"] {
+    background-color: transparent;
+    padding: 12px;
+    border: solid 1px #333;
+    border-radius: 6px 0px 0px 6px;
+    color: #fff;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+input[type="text"] {
+    background-color: transparent;
+    padding: 12px;
+    border: solid 1px #333;
+    border-radius: 6px;
+    color: #fff;
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+}
+
+footer {
+    background-color: #000;
+    padding: 36px 12px 48px 12px;
+}
+
+.container {
+    position: relative;
+    z-index: 5;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.sm-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.sm-column-2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.sm-column-3 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 3;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.sm-hidden {
+    display: initial;
+}
+
+.lg-hidden {
+    display: none;
+}
+
+.container {
+    overflow-x: visible;
+}
+
+
+
+.p-12 {
+    padding: 12px;
+}
+
+.p-24 {
+    padding: 24px;
+}
+
+.px-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.px-24 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.py-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-36 {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.m-0 {
+    margin: 0px;
+}
+
+.mb-0 {
+    margin-bottom: 0px;
+}
+
+.mb-24 {
+    margin-bottom: 24px;
+}
+
+.mx-12 {
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.mx-24 {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.mt-24 {
+    margin-top: 24px;
+}
+
+.sm-mt-24 {
+    margin-top: unset;
+}
+
+.my-24 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.my-36 {
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.border-radius-6 {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.border-radius-12 {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.border-1 {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.border-gray {
+    border-color: #ccc;
+}
+
+.white {
+    color: #fff;
+}
+
+.black {
+    color: #000;
+}
+
+.dark-gray {
+    color: #333;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.a-btn {
+    margin-top: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: #fff;
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 13px 1.75em 11px 1.75em;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #333;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 15px 35px -5px rgba(0,0,0,.8);
+    transition: transform .3s cubic-bezier(.25,.1,.25,1),box-shadow .3s cubic-bezier(.25,.1,.25,1);
+}
+
+    .a-btn.primary {
+        background-color: #FEED34;
+        color: #000;
+    }
+
+.a-btn-sm {
+    font-weight: 700;
+    line-height: 1.2em;
+    font-size: 1em;
+    color: #fff;
+    display: inline-block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    padding: 12px 12px 10px 12px;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    background-color: #333;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 15px 35px -5px rgba(0,0,0,.8);
+    transition: transform .3s cubic-bezier(.25,.1,.25,1),box-shadow .3s cubic-bezier(.25,.1,.25,1);
+}
+
+    .a-btn-sm.primary {
+        background-color: #FEED34;
+        color: #000;
+    }
+
+.a-btn-l {
+    border-radius: 0px 6px 6px 0px;
+}
+
+.sidebar {
+    background-color: #111;
+    padding: 24px;
+    width: 70vw;
+    max-width: 400px;
+}
+
+
+
+.box-full {
+    width: 100%;
+    height: 500px;
+    background: #333;
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    white-space: normal;
+}
+
+    .box-full .box-inner {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        z-index: 2;
+        width: 100%;
+        height: 500px;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+    }
+
+.box-title {
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
+    z-index: 3;
+    white-space: normal;
+    color: #fff;
+}
+
+.box-inner {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2;
+    width: 150px;
+    height: 230px;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0px 4px 36px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 4px 36px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 36px 0px rgba(0,0,0,0.4);
+}
+
+.title {
+    line-height: 1.2em;
+}
+
+.title-with-number {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+    .title-with-number .title-inner {
+        display: inline-block;
+        margin: 0px;
+        padding: 4px 0px 4px 12px;
+    }
+
+.title-inner h2 {
+    margin: 0px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    background-color: #333;
+    padding: 6px;
+    color: #fff;
+}
+
+.favorite {
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+    text-align: right;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.chip {
+    display: inline-block;
+    padding: 6px;
+    padding-right: 12px;
+    font-weight: 700;
+    background-color: #ddd;
+    color: #000;
+    border-radius: 0 12px 12px 0;
+    position: relative;
+    z-index: 4;
+    height: 12px;
+    margin-top: 12px;
+    font-size: 10px;
+}
+
+.chip-special {
+    display: inline-block;
+    padding: 6px;
+    padding-right: 12px;
+    padding-left: 12px;
+    background-color: #FEED34;
+    font-weight: 700;
+    border-radius: 12px;
+    position: relative;
+    z-index: 4;
+    height: 12px;
+    font-size: 10px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.chip-special-sm {
+    display: inline-block;
+    padding: 3px;
+    padding-right: 8px;
+    padding-left: 8px;
+    background-color: #FEED34;
+    font-weight: 700;
+    border-radius: 12px;
+    position: relative;
+    z-index: 4;
+    height: 12px;
+    font-size: 10px;
+    color: #000;
+}
+
+.fade-to-black-v {
+    background: rgb(17,17,17);
+    background: linear-gradient(0deg, rgba(17,17,17,1) 0%, rgba(17,17,17,0) 100%);
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+    bottom: -150px;
+    left: 0px;
+    z-index: 3;
+}
+
+.cover {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+.cover-title {
+    z-index: 4;
+    position: relative;
+    margin-top: -55vh;
+    margin-bottom: 20vh;
+}
+
+.material-icons.stack {
+    display: inline-block;
+    width: 30px;
+}
+
+.list-unstyled {
+    list-style-type: none;
+    display: block;
+    padding-left: 0px;
+    margin-top: 48px;
+}
+
+.list_link_item {
+    display: block;
+    padding: 3px 0px 3px 0px;
+    border-bottom: solid 1px #333;
+}
+
+.title-travel {
+    position: relative;
+    margin: 0px 24px 0px 24px;
+    z-index: 4;
+    min-height: 20vh;
+}
+
+    .title-travel h1 {
+        font-size: 60px;
+        padding-left: 80px;
+        margin: 0;
+    }
+
+@media (max-width: 1024px) {
+    .title-travel h1 {
+        font-size: 48px;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-travel h1 {
+        font-size: 36px;
+        padding-left: 0px;
+    }
+}
+
+.mega-title {
+    font-size: 1.8em;
+}
+
+.mega-btn {
+    width: 100%;
+    min-width: 350px;
+    max-width: 400px;
+    margin: auto;
+}
+
+#nav-main {
+    /* padding:12px; */
+    background-color: #111;
+    box-shadow: 0 15px 35px -5px rgba(0,0,0,.8);
+    position: fixed;
+    display: block;
+    z-index: 99999;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /* max-height:24px; */
+    /* overflow: hidden; */
+}
+
+.i-amphtml-carousel-arrows {
+    z-index:10;
+}
+
+.carousel-big {
+    height: 205px;
+    max-height: 205px;
+}
+
+    .carousel-big .box {
+        min-width: 300px;
+        width: 300px;
+        height: 205px;
+        background: #333;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        white-space: normal;
+    }
+
+
+    .carousel-big .box-inner {
+        min-width: 300px;
+        width: 300px;
+        height: 205px;
+    }
+
+    .carousel-big .title {
+        font-size: 1.2em;
+    }
+
+.text-big {
+    font-size: 1.2em;
+}
+
+.video-embedded {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon {
+    text-decoration: none;
+}
+
+.sidebar li {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.thumb-circle {
+    height: 48px;
+    width: 48px;
+    border-radius: 28px;
+    border: solid 4px #333;
+    overflow: hidden;
+    position: relative;
+}
+
+amp-img.coverfit img {
+    object-fit: cover;
+}
+
+.odd .sm-order-1 {
+    order: 1;
+}
+
+.odd .sm-order-2 {
+    order: 2;
+}
+
+.amp-scrollable-carousel-slide:first-child {
+    margin-left: 12px;
+    -webkit-margin-start: 12px;
+    margin-inline-start: 12px;
+}
+
+.amp-scrollable-carousel-slide:last-child {
+    margin-right: 12px;
+    -webkit-margin-end: 12px;
+    margin-inline-end: 12px;
+}
+
+amp-accordion a {
+    color: #fff;
+    text-decoration: none;
+}
+
+    amp-accordion a:link {
+        color: #fff;
+    }
+
+    amp-accordion a:visited {
+        color: #ccc;
+    }
+
+    amp-accordion a:active {
+        color: #FEED34;
+    }
+
+    amp-accordion a:hover {
+        color: #FEED34;
+    }
+
+amp-accordion section:not([expanded]) {
+    padding-bottom: 12px;
+}
+
+amp-accordion section[expanded] > h4 {
+    background-color: transparent;
+    border: 0px;
+}
+
+amp-accordion section:not([expanded]) > h4 {
+    background-color: transparent;
+    border: 0px;
+}
+
+amp-accordion section[expanded] > h4 {
+    background-color: transparent;
+    border: 0px;
+}
+
+amp-accordion div[role="listitem"] {
+    margin-left: 24px;
+}
+
+    amp-accordion div[role="listitem"]:last-child {
+        margin-bottom: 24px;
+    }
+
+amp-img.contain img {
+    object-fit: contain;
+}
+
+amp-img.logo {
+    max-width: 180px;
+}
+
+amp-img.object-fit-cover img {
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 724px) {
+
+    .sm-mt-24 {
+        margin-top: 24px;
+    }
+
+    .sm-my-24 {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .sm-display-block {
+        display: block;
+    }
+
+    .sm-hidden {
+        display: none;
+    }
+
+    .lg-hidden {
+        display: initial;
+    }
+
+    .mega-btn {
+        width: 100%;
+        min-width: 300px;
+        max-width: 316px;
+        margin: auto;
+    }
+
+    .cover-title {
+        margin-top: -60vh;
+        margin-bottom: 10vh;
+    }
+
+    .box-full {
+        height: 250px;
+    }
+
+        .box-full .box-inner {
+            height: 250px;
+        }
+
+    .video-embedded {
+        max-width: 768px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .sm-order-1 {
+        order: 1;
+    }
+
+    .sm-order-2 {
+        order: 2;
+    }
+}
+
+@media screen and (min-width: 724px) {
+    .column {
+        flex: 1
+    }
+
+    .column-2 {
+        flex: 2
+    }
+
+    .lg-p-36 {
+        padding: 36px;
+    }
+
+    .box {
+        min-width: 300px;
+        width: 300px;
+        height: 205px;
+        background: #333;
+        border-radius: 6px;
+        overflow: hidden;
+        position: relative;
+        white-space: normal;
+        cursor: pointer;
+    }
+
+
+    .box-inner {
+        min-width: 300px;
+        width: 100%;
+        height: 205px;
+    }
+
+    .title {
+        font-size: 1.4em;
+    }
+
+    .carousel-big {
+        height: 450px;
+        max-height: 450px;
+    }
+
+        .carousel-big .box {
+            min-width: 300px;
+            height: 450px;
+            width: 300px;
+            background: #333;
+            border-radius: 6px;
+            overflow: hidden;
+            position: relative;
+            white-space: normal;
+        }
+
+
+        .carousel-big .box-inner {
+            height: 450px;
+            min-width: 300px;
+            width: 300px;
+        }
+
+        .carousel-big .title {
+            font-size: 1.6em;
+        }
+}
+
+/* Icons */
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.cover-landing-search {
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+}
+
+.container-fixed {
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0px auto 0px auto;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.grid-box {
+    padding: 0px 12px 0px 12px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+}
+
+    .grid-box .box {
+        width: unset;
+        min-width: unset;
+        grid-column: span 3;
+    }
+
+    .grid-box .box-inner {
+        min-width: 300px;
+        width: 100%;
+    }
+
+    .grid-box .item {
+        width: unset;
+        min-width: unset;
+        grid-column: span 3;
+        font-size: 1.2em;
+    }
+
+.material-icons {
+    vertical-align: middle;
+}
+
+.yellow {
+    color: #FEED34;
+}
+
+.multi-range {
+    --height: 2rem;
+    display: block;
+    height: var(--height);
+    pointer-events: none;
+    width: 100%;
+    margin: 0;
+}
+
+    .multi-range + .multi-range {
+        margin-top: calc( var(--height) * -1);
+    }
+
+    .multi-range::-webkit-slider-thumb {
+        pointer-events: all;
+    }
+
+    .multi-range::-moz-range-thumb {
+        pointer-events: all;
+    }
+
+    .multi-range::-ms-thumb {
+        pointer-events: all;
+    }
+
+.d-flex {
+    display: flex;
+}
+
+.no-flex-shrink {
+    flex-shrink: 0;
+}
+
+.flex-shrink {
+    flex-shrink: 1;
+    flex-basis: 100%;
+}
+
+.pl-12 {
+    padding-left: 12px;
+}
+
+.pr-12 {
+    padding-right: 12px;
+}
+
+.range-value {
+    min-width: 60px;
+}
+
+.ap-m-filter-bubble {
+    line-height: 1.6rem;
+    font-size: .8125rem;
+    font-weight: 700;
+    box-shadow: 0 10px 25px 0 rgba(0,0,0,.15);
+    border-radius: 25px;
+    border: 0;
+    padding: 5px 10px;
+    background: #222;
+    color: #999999;
+    cursor: pointer;
+    margin: 5px;
+}
+
+    .ap-m-filter-bubble.active {
+        line-height: 1.6rem;
+        font-size: .8125rem;
+        font-weight: 700;
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.15);
+        border-radius: 25px;
+        border: 0;
+        padding: 5px 10px;
+        background: #ffffff;
+        color: #111111;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    .ap-m-filter-bubble:hover {
+        line-height: 1.6rem;
+        font-size: .8125rem;
+        font-weight: 700;
+        box-shadow: 0 10px 25px 0 rgba(0,0,0,.15);
+        border-radius: 25px;
+        border: 0;
+        padding: 5px 10px;
+        background: #666666;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+
+label {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #222;
+    border: .05rem solid #333;
+    border-radius: .1rem;
+    color: inherit;
+    font-size: .8rem;
+    height: 1.8rem;
+    line-height: 1.2rem;
+    outline: 0;
+    padding: .25rem .4rem;
+    vertical-align: middle;
+    width: 100%;
+    font-family: "Poppins", "Helvetica", "Arial", sans-serif;
+}
+
+    .form-select.select-lg {
+        font-size: 1rem;
+        height: 2rem;
+        padding: .35rem 1.4rem .35rem .6rem;
+    }
+
+    .form-select:not([multiple]):not([size]) {
+        background: #222 url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right .35rem center/.4rem .5rem;
+        padding-right: 1.2rem;
+    }
+
+amp-nested-menu h3 {
+    margin: 0px;
+    margin-left: 24px;
+}
+
+.text-gray {
+    color: #666;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.nav-link a {
+    display: inline-block;
+    padding: 12px 18px 12px 18px;
+    transition: all ease-in-out .3s;
+    cursor: pointer;
+}
+
+    .nav-link a:hover {
+        text-decoration: none;
+    }
+
+.mega-menu-panel {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding-top: 72px;
+    padding-bottom: 60px;
+    z-index: 6;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow-y: scroll;
+    transition: all ease-in-out .5s;
+}
+
+    .mega-menu-panel.hidden {
+        top: -100vh;
+    }
+
+    .mega-menu-panel ul {
+        list-style: none;
+        padding: 0px;
+        line-height: 1.7em;
+    }
+
+@media only screen and (max-width: 1280px) {
+    .grid-box .box {
+        width: unset;
+        min-width: unset;
+        grid-column: span 4;
+    }
+}
+
+@media only screen and (max-width: 724px) {
+    .grid-box .box {
+        width: unset;
+        min-width: unset;
+        grid-column: span 6;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .grid-box .box {
+        width: unset;
+        min-width: unset;
+        grid-column: span 12;
+    }
+}
+
+/* Addthis*/
+@media (max-width: 750px) {
+    .addthis {
+        width: 320px;
+    }
+}
+
+@media (min-width: 751px) {
+    .addthis {
+        width: 751px;
+    }
+}
+
+</style>
+
+<style amp-boilerplate>
+        body {
+    -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+    -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+    -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+    animation: -amp-start 8s steps(1,end) 0s 1 normal both
+}
+
+@-webkit-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-moz-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-ms-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@-o-keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+@keyframes -amp-start {
+    from {
+        visibility: hidden
+    }
+
+    to {
+        visibility: visible
+    }
+}
+
+</style>
+
+<noscript>
+    <style amp-boilerplate>
+        body {
+            -webkit-animation: none;
+            -moz-animation: none;
+            -ms-animation: none;
+            animation: none
+        }
+    </style>
+</noscript>
+
+<link rel="canonical" href=".">
+<title>AMAKA</title>
+<script type="application/ld+json">
+    {
+    "@context": "http://schema.org",
+    "@type": "Webpage",
+    "url": "https://www.example.com",
+    "name": "My Webpage",
+    "headline": "webpage title",
+    "description": "Here is the description",
+    "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.example.com"
+    },
+    "publisher": {
+    "@type": "Organization",
+    "name": "The Publisher",
+    "logo": {
+    "url": "https://www.example.com/logo-blue.svg",
+    "width": 175,
+    "height": 60,
+    "@type": "ImageObject"
+    }
+    },
+    "image": {
+    "@type": "ImageObject",
+    "url": "https://www.example.com/leader.png",
+    "width": 1200,
+    "height": 630
+    }
+    }
+</script>
+</head>
+<body>
+    <amp-geo layout="nodisplay"></amp-geo>
+
+    <amp-animation id="hideAnim"
+                   layout="nodisplay">
+        <script type="application/json">
+            {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [{
+            "selector": "#nav-main",
+            "keyframes": [{
+            "opacity": "0",
+            "visibility": "hidden"
+            }]
+            }]
+            }
+        </script>
+    </amp-animation>
+
+    <amp-animation id="showAnim"
+                   layout="nodisplay">
+        <script type="application/json">
+            {
+            "duration": "200ms",
+            "fill": "both",
+            "iterations": "1",
+            "direction": "alternate",
+            "animations": [{
+            "selector": "#nav-main",
+            "keyframes": [{
+            "visibility": "visible","opacity": "1"
+            }]
+            }]
+            }
+        </script>
+    </amp-animation>
+
+    <nav id="nav-main" amp-fx='float-in-top' class="lg-hidden">
+    <div class="d-flex">
+        <div class="sm-column lg-hidden px-12 py-12">
+            <a id="nav-icon" on="tap:sidebar-main.toggle">
+                <i class="material-icons">menu</i>
+            </a>
+        </div>
+        <div class="sm-column-2 column text-center px-24 py-12" style="cursor: pointer;" onclick="window.location.href = '/';">
+            <amp-img class="logo" width="110" height="18" layout="responsive" src="/static/img/amaka_logo.svg"></amp-img>
+        </div>
+        <div class="column-2 sm-hidden nav-link text-center">
+            <a class="gray" on="tap:panel_destinations.toggleClass(class='hidden'),panel_experiences.toggleClass(class='hidden',force=true),panel_periods.toggleClass(class='hidden',force=true),panel_amaka.toggleClass(class='hidden',force=true)">
+                Destinazioni
+            </a>
+            <a class="gray" on="tap:panel_experiences.toggleClass(class='hidden'),panel_amaka.toggleClass(class='hidden',force=true),panel_periods.toggleClass(class='hidden',force=true),panel_destinations.toggleClass(class='hidden',force=true)">
+                Esperienze
+            </a>
+            <a class="gray" on="tap:panel_periods.toggleClass(class='hidden'),panel_experiences.toggleClass(class='hidden',force=true),panel_amaka.toggleClass(class='hidden',force=true),panel_destinations.toggleClass(class='hidden',force=true)">
+                Periodi
+            </a>
+            <a class="gray" on="tap:panel_amaka.toggleClass(class='hidden'),panel_experiences.toggleClass(class='hidden',force=true),panel_destinations.toggleClass(class='hidden',force=true),panel_periods.toggleClass(class='hidden',force=true)">
+                Come funziona
+            </a>
+        </div>
+        <div class="sm-column py-12 px-12">
+            <div class="text-right">
+                <a class="inline-block gray" on="tap:sidebar-search.toggle" style="width:30px; cursor:pointer; overflow: hidden;">
+                    <i class="material-icons">search</i>
+                </a>
+                <a class="inline-block gray" on="tap:sidebar-user.toggle" style="width:30px; cursor:pointer; overflow: hidden;">
+                    <i class="material-icons">account_circle</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div id="panel_destinations" class="hidden mega-menu-panel">
+    <div class="container-fixed">
+        <div class="text-right">
+            <a href="#close" class="close" style="color:white">
+                <i class="material-icons"
+                   style="font-size:2em"
+                   on="tap:panel_destinations.toggleClass(class=&#x27;hidden&#x27;),panel_experiences.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_periods.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_amaka.toggleClass(class=&#x27;hidden&#x27;,force=true)">close</i>
+            </a>
+        </div>
+            <h2 class="px-12">Destinazioni</h2>
+
+        <div class="grid-box">
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/1">Africa</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/14">Sudafrica</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/15">Botswana</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/16">Namibia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/17">Zambia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/18">Mozambico</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/19">Tanzania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/20">Kenya</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/21">Uganda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/22">Etiopia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/23">Marocco</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/24">Egitto</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/83">Ruanda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/84">Mauritius</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/85">Madagascar</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/86">Seychelles</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/259">Tunisia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/278">Capo Verde</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/297">Zimbabwe</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/2">America del Nord</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/25">Stati Uniti</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/26">Canada</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/274">Bermuda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/290">Groenlandia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/301">California</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/3">Asia</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/42">Thailandia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/43">Laos</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/44">Cambogia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/45">Indonesia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/46">Vietnam</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/47">Malesia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/48">Cina</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/49">Giappone</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/50">Myanmar</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/51">Mongolia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/57">India</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/58">Maldive</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/59">Sri Lanka</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/60">Bhutan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/61">Nepal</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/89">Filippine</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/250">Singapore</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/256">Taiwan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/257">Tagikistan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/258">Tibet</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/260">Turkmenistan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/269">Armenia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/272">Azerbaijan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/280">Corea del Sud</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/281">Uzbekistan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/283">Dubai</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/292">Kazakistan</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/293">Kirghizistan</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/4">Europa</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/63">Spagna</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/64">Portogallo</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/65">Francia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/66">Belgio</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/67">Regno Unito</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/68">Irlanda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/69">Islanda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/70">Grecia </a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/72">Svezia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/73">Norvegia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/74">Russia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/236">Albania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/237">Malta</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/238">Moldavia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/239">Monaco</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/240">Montenegro</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/241">Paesi Bassi</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/244">Polonia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/245">Repubblica Ceca</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/247">Romania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/248">San Marino</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/249">Serbia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/251">Slovacchia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/252">Slovenia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/254">Svalbard</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/255">Svizzera</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/261">Ucraina</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/262">Ungheria</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/264">Malawi</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/265">Macedonia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/266">Lussemburgo</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/267">Lituania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/271">Austria</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/275">Bielorussia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/276">Bosnia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/277">Bulgaria</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/282">Croazia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/284">Estonia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/287">Finlandia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/288">Georgia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/289">Germania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/294">Kosovo</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/295">Lettonia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/296">Danimarca</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/9">America Centrale</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/27">Messico</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/28">Panama</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/29">Costa Rica</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/30">Belize </a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/31">Nicaragua</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/32">Guatemala</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/33">Honduras</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/34">Cuba</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/87">Giamaica</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/88">Isole Caraibiche</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/246">Repubblica Dominicana</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/273">Bahamas</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/10">America del Sud</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/35">Argentina</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/36">Brasile</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/37">Colombia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/38">Per&#xF9;</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/39">Bolivia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/40">Ecuador e Galapagos</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/41">Cile</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/253">South Georgia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/263">Uruguay</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/285">Falklands</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/12">Medio Oriente</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/52">Dubai e Emirati Arabi</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/53">Oman</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/54">Giordania</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/55">Israele</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/56">Iran</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/71">Turchia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/242">Palestina</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/279">Cipro</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/62">Italia</a></h4>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="item">
+                        <h4><a style="color:white" href="/travels/destinations/82">Australia e Nuova Zelanda</a></h4>
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/75">Australia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/76">Nuova Zelanda</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/77">Polinesia, Micronesia e Melanesia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/243">Polinesia Francese</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/286">Fiji</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/destinations/291">Isole Cook</a>
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="panel_experiences" class="hidden mega-menu-panel">
+    <div class="container-fixed">
+        <div class="text-right">
+            <a href="#close" class="close" style="color:white">
+                <i class="material-icons"
+                   style="font-size:2em"
+                   on="tap:panel_experiences.toggleClass(class=&#x27;hidden&#x27;),panel_amaka.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_periods.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_destinations.toggleClass(class=&#x27;hidden&#x27;,force=true)">close</i>
+            </a>
+        </div>
+            <h2 class="px-12">Esperienze</h2>
+
+        <div class="grid-box">
+                <div class="item">
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/27">In coppia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/28">In famiglia</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/29">Con amici</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/30">Da solo</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/31">Grand tour</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/32">Weekend</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/33">Natura e avventura</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/34">On the road</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/35">Safari</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/36">Storia e cultura</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/37">In citt&#xE0;</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/38">Tour e mare</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/experiences/39">Viaggi di nozze</a>
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="panel_periods" class="hidden mega-menu-panel">
+    <div class="container-fixed">
+        <div class="text-right">
+            <a href="#close" class="close" style="color:white">
+                <i class="material-icons"
+                   style="font-size:2em"
+                   on="tap:panel_periods.toggleClass(class=&#x27;hidden&#x27;),panel_experiences.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_amaka.toggleClass(class=&#x27;hidden&#x27;,force=true),panel_destinations.toggleClass(class=&#x27;hidden&#x27;,force=true)">close</i>
+            </a>
+        </div>
+            <h2 class="px-12">Periodi</h2>
+
+        <div class="grid-box">
+                <div class="item">
+                    <ul>
+                            <li>
+                                <a style="color:white" href="/travels/periods/1">Primavera</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/periods/3">Estate</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/periods/4">Autunno</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/periods/6">Inverno</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/periods/8">Speciale Estate</a>
+                            </li>
+                            <li>
+                                <a style="color:white" href="/travels/periods/9">Natale e Capodanno</a>
+                            </li>
+                    </ul>
+                </div>
+        </div>
+
+    </div>
+</div>
+<div id="panel_amaka" class="hidden mega-menu-panel">
+    <div class="container-fixed">
+        <div class="text-right">
+            <a href="#close" class="close">
+                <i class="material-icons" style="font-size:2em" on="tap:panel_amaka.toggleClass(class='hidden'),panel_experiences.toggleClass(class='hidden',force=true),panel_destinations.toggleClass(class='hidden',force=true)">close</i>
+            </a>
+        </div>
+        <h2 class="text-center">Come funziona Amaka</h2>
+        <div class="mx-24 border-radius-12 video-embedded">
+            <amp-vimeo data-videoid="360795433"
+                       layout="responsive"
+                       width="16"
+                       height="9">
+            </amp-vimeo>
+        </div>
+    </div>
+</div>
+
+    <amp-position-observer on="enter:hideAnim.start;"
+                           layout="nodisplay">
+    </amp-position-observer>
+
+    
+<amp-sidebar class="sidebar" id="sidebar-main"
+             layout="nodisplay"
+             side="left">
+
+    <amp-nested-menu layout="fill">
+        <ul>
+            <li>
+                <div class="px-24 py-36">
+                    <a href="#">
+                        <i class="material-icons" on="tap:sidebar-main.close">close</i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <h3><a href="/">Home page</a></h3>
+            </li>
+            <li>
+                
+<h3 amp-nested-submenu-open>Destinazioni</h3>
+<div amp-nested-submenu>
+    <ul>
+        <li>
+            <h3 amp-nested-submenu-close class="py-36">
+                <i class="material-icons">arrow_back</i>
+                <span class="text-gray text-normal">Destinazioni</span>
+            </h3>
+        </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Africa</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Africa</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/14">Sudafrica</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/15">Botswana</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/16">Namibia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/17">Zambia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/18">Mozambico</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/19">Tanzania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/20">Kenya</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/21">Uganda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/22">Etiopia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/23">Marocco</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/24">Egitto</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/83">Ruanda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/84">Mauritius</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/85">Madagascar</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/86">Seychelles</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/259">Tunisia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/278">Capo Verde</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/297">Zimbabwe</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>America del Nord</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">America del Nord</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/25">Stati Uniti</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/26">Canada</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/274">Bermuda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/290">Groenlandia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/301">California</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Asia</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Asia</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/42">Thailandia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/43">Laos</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/44">Cambogia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/45">Indonesia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/46">Vietnam</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/47">Malesia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/48">Cina</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/49">Giappone</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/50">Myanmar</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/51">Mongolia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/57">India</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/58">Maldive</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/59">Sri Lanka</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/60">Bhutan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/61">Nepal</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/89">Filippine</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/250">Singapore</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/256">Taiwan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/257">Tagikistan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/258">Tibet</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/260">Turkmenistan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/269">Armenia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/272">Azerbaijan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/280">Corea del Sud</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/281">Uzbekistan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/283">Dubai</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/292">Kazakistan</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/293">Kirghizistan</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Europa</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Europa</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/63">Spagna</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/64">Portogallo</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/65">Francia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/66">Belgio</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/67">Regno Unito</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/68">Irlanda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/69">Islanda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/70">Grecia </a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/72">Svezia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/73">Norvegia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/74">Russia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/236">Albania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/237">Malta</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/238">Moldavia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/239">Monaco</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/240">Montenegro</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/241">Paesi Bassi</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/244">Polonia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/245">Repubblica Ceca</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/247">Romania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/248">San Marino</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/249">Serbia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/251">Slovacchia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/252">Slovenia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/254">Svalbard</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/255">Svizzera</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/261">Ucraina</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/262">Ungheria</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/264">Malawi</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/265">Macedonia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/266">Lussemburgo</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/267">Lituania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/271">Austria</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/275">Bielorussia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/276">Bosnia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/277">Bulgaria</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/282">Croazia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/284">Estonia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/287">Finlandia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/288">Georgia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/289">Germania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/294">Kosovo</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/295">Lettonia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/296">Danimarca</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>America Centrale</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">America Centrale</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/27">Messico</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/28">Panama</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/29">Costa Rica</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/30">Belize </a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/31">Nicaragua</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/32">Guatemala</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/33">Honduras</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/34">Cuba</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/87">Giamaica</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/88">Isole Caraibiche</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/246">Repubblica Dominicana</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/273">Bahamas</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>America del Sud</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">America del Sud</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/35">Argentina</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/36">Brasile</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/37">Colombia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/38">Per&#xF9;</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/39">Bolivia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/40">Ecuador e Galapagos</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/41">Cile</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/253">South Georgia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/263">Uruguay</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/285">Falklands</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Medio Oriente</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Medio Oriente</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/52">Dubai e Emirati Arabi</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/53">Oman</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/54">Giordania</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/55">Israele</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/56">Iran</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/71">Turchia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/242">Palestina</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/279">Cipro</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Italia</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Italia</span>
+                                </h3>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <h3 amp-nested-submenu-open>Australia e Nuova Zelanda</h3>
+                    <div amp-nested-submenu>
+                        <ul>
+                            <li>
+                                <h3 amp-nested-submenu-close class="py-36">
+                                    <i class="material-icons">arrow_back</i>
+                                    <span class="text-gray text-normal">Australia e Nuova Zelanda</span>
+                                </h3>
+                            </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/75">Australia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/76">Nuova Zelanda</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/77">Polinesia, Micronesia e Melanesia</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/243">Polinesia Francese</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/286">Fiji</a></h3>
+                                </li>
+                                <li>
+                                    <h3><a href="/Travels/destinations/291">Isole Cook</a></h3>
+                                </li>
+                        </ul>
+                    </div>
+                </li>
+    </ul>
+</div>
+
+
+            </li>
+            <li>
+                
+<h3 amp-nested-submenu-open>Esperienze</h3>
+<div amp-nested-submenu>
+    <ul>
+        <li>
+            <h3 amp-nested-submenu-close class="py-36">
+                <i class="material-icons">arrow_back</i>
+                <span class="text-gray text-normal">Esperienze</span>
+            </h3>
+        </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/27">In coppia</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/28">In famiglia</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/29">Con amici</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/30">Da solo</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/31">Grand tour</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/32">Weekend</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/33">Natura e avventura</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/34">On the road</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/35">Safari</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/36">Storia e cultura</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/37">In citt&#xE0;</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/38">Tour e mare</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/experiences/39">Viaggi di nozze</a></h3>
+                    </li>
+    </ul>
+</div>
+
+
+            </li>
+            <li>
+                
+<h3 amp-nested-submenu-open>Periodi</h3>
+<div amp-nested-submenu>
+    <ul>
+        <li>
+            <h3 amp-nested-submenu-close class="py-36">
+                <i class="material-icons">arrow_back</i>
+                <span class="text-gray text-normal">Periodi</span>
+            </h3>
+        </li>
+                    <li>
+                        <h3><a href="/Travels/periods/1">Primavera</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/periods/3">Estate</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/periods/4">Autunno</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/periods/6">Inverno</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/periods/8">Speciale Estate</a></h3>
+                    </li>
+                    <li>
+                        <h3><a href="/Travels/periods/9">Natale e Capodanno</a></h3>
+                    </li>
+    </ul>
+</div>
+
+
+            </li>
+            <li>
+                <h3><a href="https://player.vimeo.com/video/360795433?autoplay=1" target="_blank">Come funziona Amaka</a></h3>
+            </li>
+        </ul>
+    </amp-nested-menu>
+</amp-sidebar>
+
+<amp-sidebar id="sidebar-search"
+             class="sidebar"
+             layout="nodisplay"
+             side="right">
+    <i class="material-icons" on="tap:sidebar-search.close">arrow_forward</i>
+    <h3>Inserisci una destinazione, luogo, attività....</h3>
+
+
+    <amp-script script="searchBarScript" type="text/plain" layout="container">
+        <input id="inputSearch" type="text" style="width: 90%;" class="form-control" placeholder="Cerca...">
+
+        <h3>
+            <span id="loadIcon" hidden="hidden" style="width:90%;text-align:center" class="fa fa-circle-o-notch fa-spin fa-2x"></span>
+        </h3>
+
+        <div class="search-results" id="searchResults"></div>
+    </amp-script>
+
+
+    <script id="preferredScript" src="/dist/commonAmp.js" target="amp-script">
+    </script>
+
+    <script id="searchBarScript" target="amp-script">
+            var searchBarUrl = 'https://awaywebapi.azurewebsites.net/api/travels/search';
+window.Åway = new AwayModule.Away('https://awaywebapi.azurewebsites.net/api/');
+// class helper per le chiamate http
+var HttpHelper = {
+    HttpPostCall: function (jsonValues, url, callBack) {
+        var xhttp = new XMLHttpRequest();
+
+        xhttp.onreadystatechange = callBack;
+
+        xhttp.open("POST", url, true);
+
+        xhttp.setRequestHeader("Content-type", "application/json; charset=UTF-8");
+
+        xhttp.send(jsonValues);
+    }
+};
+
+var searchTimer = null;
+var maxSearchBarResult = 3;
+
+var searchText = document.getElementById("inputSearch").addEventListener('keyup', function (event) { onKeyUp(event); });
+
+function onKeyUp(event) {
+
+    var elementTOSearch = document.getElementById("inputSearch").value;
+    if (elementTOSearch.length > 2) {
+        // we set a delay of 1 sec before firing the search
+        // first we stop the eventually previousely activated one
+        if (searchTimer !== null) {
+            clearTimeout(searchTimer);
+        }
+        let code = event.keyCode || event.which;
+        if (code === 13) { //Enter keycode
+            searchTravels(elementTOSearch);
+        }
+        else {
+            searchTimer = setTimeout(function () {
+                searchTravels(elementTOSearch);
+            }, 1000);
+        }
+    }
+    else {
+        if (searchTimer !== null) {
+            clearTimeout(searchTimer);
+        }
+
+        let code = event.keyCode || event.which;
+        if (code === 13) { //Enter keycode
+            document.getElementById("searchResults").innerHTML = "";
+        }
+        else {
+            searchTimer = setTimeout(function () {
+                document.getElementById("searchResults").innerHTML = "";
+            }, 1000);
+        }
+    }
+}
+
+function searchTravels(elementTOSearch) {
+
+    document.getElementById("loadIcon").hidden = false;
+
+    HttpHelper.HttpPostCall(
+        JSON.stringify(elementTOSearch),
+        searchBarUrl,
+        function () {
+            var searchResults = document.getElementById("searchResults");
+            if (this.readyState === 4 && this.status === 200) {
+
+                searchResults.innerHTML = "";
+                var out = JSON.parse(this.responseText);
+
+                //Travels List
+                var outTravels = "";
+                var travels = out.travels;
+
+                if (travels.length > 0) {
+                    console.log("*****viaggi count :" + travels.length);
+                    outTravels = "<h4>Viaggi</h4>";
+
+                    for (var i = 0; i < travels.length && i <= maxSearchBarResult; i++) {
+
+                        outTravels += '<a href="/travel/' + travels[i].travelSlug + '" class="list_link_item">' +
+                            travels[i].travelName + '</a>';
+                    }
+
+                    outTravels += '<a class="list_link_item" href="/travels/query/' + document.getElementById("inputSearch").value + '">Visualizza tutti <span class="chip-special-sm">' + travels.length + '</span ></a >';
+                }
+
+                //Destination List
+                var outDestinations = "";
+                var destinations = out.destinations;
+                if (destinations.length > 0) {
+
+                    outDestinations = "<h4>Destinazioni</h4>";
+
+                    for (let i = 0; i < destinations.length; i++) {
+                        //Inverse Destination Number
+                        var inverseDestinationsParentNumber = destinations[i].item.inverseDestinationParent.length;
+                        var index = "";
+                        if (inverseDestinationsParentNumber !== null && inverseDestinationsParentNumber > 0) {
+                            index = '  <span class="chip-special-sm">' + inverseDestinationsParentNumber + '</span>';
+                        }
+                        outDestinations += '<a href="/travels/destinations/' + destinations[i].item.destinationId + '" class="list_link_item">' +
+                            destinations[i].item.destinationName + index + '</a>';
+                    }
+                }
+
+                document.getElementById("loadIcon").hidden = true;
+                //add no result string if travels.length=0 && destination.length=0
+                if (travels.length === 0) {
+                    searchResults.innerHTML = "<h4>Nessun risultato.</h4>";
+                }
+                else {
+                    searchResults.innerHTML = outTravels + outDestinations;
+                }
+
+            }
+        });
+}
+
+
+
+function ToggleSingleBoxFavourite(sender, travelId) {
+    ToggleFavourite(sender, travelId);
+    return false;
+}
+
+function ToggleTopBoxFavourite(sender, travelId) {
+    ToggleFavourite(sender, travelId);
+    return false;
+}
+
+function ToggleWideBoxFavourite(sender, travelId) {
+    ToggleFavourite(sender, travelId);
+    return false;
+}
+
+
+function ToggleFavourite(sender, travelId) {
+    Åway.wishlistService.getWishListTravels().then(
+        function (data) {
+            if (data === null) {
+                Åway.wishlistService.saveToMyWishlist(travelId);
+                sender.children[0].innerText = "favorite";
+            }
+            else {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i]['travelId'] === travelId) {
+                        Åway.wishlistService.removeFromMyWishlist(travelId);
+                        sender.children[0].innerText = "favorite_border";
+                        return;
+                    }
+                }
+
+                Åway.wishlistService.saveToMyWishlist(travelId);
+                sender.children[0].innerText = "favorite";
+            }
+        });
+}
+
+
+var minPrice = -1;
+var maxPrice = 9999999;
+
+var minNights = -1;
+var maxNights = 9999999;
+
+var experiences = [];
+var destinations = [];
+
+/* filter travels */
+var debugFilter = false;
+
+function FilterByMinPrice(price, min, max) {
+    if (maxPrice === 9999999) {
+        maxPrice = max;
+    }
+
+    minPrice = price;
+
+    if (debugFilter)
+        console.log("FilterByMinPrice " + price);
+
+    document.getElementById("budgetFilterLabel").innerHTML = "Da " + minPrice + " a " + maxPrice + "€";
+
+    ApplyFilter();
+}
+
+function FilterByMaxPrice(price, min, max) {
+    if (minPrice === -1) {
+        minPrice = min;
+    }
+
+    maxPrice = price;
+
+
+    if (debugFilter)
+        console.log("FilterByMaxPrice " + price);
+
+    document.getElementById("budgetFilterLabel").innerHTML = "Da " + minPrice + " a " + maxPrice + "€";
+
+    ApplyFilter();
+}
+
+function FilterByMinNights(nights, min, max) {
+    if (maxNights === 9999999) {
+        maxNights = max;
+    }
+
+    minNights = nights;
+
+    if (debugFilter)
+        console.log("FilterByMinNights " + nights);
+
+    document.getElementById("nightsFilterLabel").innerHTML = "Da " + minNights + " a " + maxNights + " notti";
+
+    ApplyFilter();
+}
+
+function FilterByMaxNights(nights, min, max) {
+    if (minNights === -1) {
+        minNights = min;
+    }
+
+    maxNights = nights;
+
+    if (debugFilter)
+        console.log("FilterByMaxNights " + nights);
+
+    document.getElementById("nightsFilterLabel").innerHTML = "Da " + minNights + " a " + maxNights + " notti";
+
+    ApplyFilter();
+}
+
+function FilterByExperiences(expId, sender) {
+    experiences = ManageArray(experiences, expId, sender, "experiencesFilterItem");
+
+    if (debugFilter)
+        console.log("FilterByExperiences " + expId + " --> [" + experiences.toString() + "]");
+
+    ApplyFilter();
+}
+
+function ManageArray(inputArray, itemId, sender, markerClass) {
+    let itemPos = inputArray.indexOf(itemId);
+    if (itemPos >= 0) {
+        let tmp = [];
+        for (var i = 0; i < inputArray.length; i++) {
+            if (i !== itemPos) {
+                tmp.push(inputArray[i]);
+            }
+        }
+
+        inputArray = tmp;
+
+        sender.className = markerClass + " ap-m-filter-bubble";
+    }
+    else {
+        inputArray.push(itemId);
+        sender.className = markerClass + " ap-m-filter-bubble active";
+    }
+
+    return inputArray;
+}
+
+function FilterByDestinations(destId, sender) {
+    destinations = ManageArray(destinations, destId, sender, "destinationFilterItem");
+
+    if (debugFilter)
+        console.log("FilterByDestinations " + destId + " --> [" + destinations.toString() + "]");
+
+    ApplyFilter();
+}
+
+function ApplyFilter() {
+    var elements = document.getElementsByClassName("box");
+
+    for (var i = 0; i < elements.length; i++) {
+        let priceBox = elements[i].getAttribute("data-price");
+        let nightsBox = elements[i].getAttribute("data-nights");
+        let destiantionsBox = elements[i].getAttribute("data-destinations");
+        let experiecesBox = elements[i].getAttribute("data-experiences");
+
+        let hideByNights = HideByNights(nightsBox);
+        let hideByPrice = HideByPrice(priceBox);
+        let hideByExperieces = HideByExperieces(experiecesBox);
+        let hideByDestinations = HideByDestinations(destiantionsBox);
+
+        if (debugFilter) {
+            console.log("Box[" + i + "] --> hideByNights [" + minNights + "<" + nightsBox + "<" + maxNights + " --> " + hideByNights + "] hideByPrice [" + minPrice + "<" + priceBox + "<" + maxPrice + " --> " + hideByPrice + "] hideByExperieces [" + experiecesBox + " - " + experiences.toString() + " --> " + hideByExperieces + "] hideByDestinations [" + destiantionsBox + " - " + destinations.toString() + " --> " + hideByDestinations + "]");
+        }
+
+        if (hideByNights ||
+            hideByPrice ||
+            hideByExperieces ||
+            hideByDestinations) {
+            elements[i].className = "box filterHiddenRes";
+        }
+        else {
+            elements[i].className = "box";
+        }
+    }
+
+    let counterText = document.getElementById("travelAvailableCounter");
+    let hidden = document.getElementsByClassName("box filterHiddenRes");
+    let total = document.getElementsByClassName("box");
+
+    if (hidden.length === total.length) {
+        counterText.innerHTML = "Nessun risultato trovato";
+    }
+    else {
+        counterText.innerHTML = "<strong>" + (total.length - hidden.length) + "</strong> viaggi trovati</span>";
+    }
+
+    let counterFilterText = document.getElementById("travelFiltersCounter");
+
+    let totalFilterCounter = experiences.length + destinations.length;
+    if (totalFilterCounter === 0) {
+        counterFilterText.innerHTML = "";
+    }
+    else {
+        counterFilterText.innerHTML = totalFilterCounter;
+    }
+}
+
+function ClearExperienceFilter() {
+    if (debugFilter)
+        console.log("ClearExperienceFilter");
+
+    experiences = [];
+
+    SetFilterStyle("experiencesFilterItem", experiences);
+
+    ApplyFilter();
+}
+
+function SetFilterStyle(markerClass, inputArray) {
+    let totalItems = document.getElementsByClassName(markerClass + " ap-m-filter-bubble");
+
+    for (var i = 0; i < totalItems.length; i++) {
+        let key = totalItems[i].getAttribute("data-filterkey").value;
+        if (inputArray.indexOf(key) >= 0) {
+            totalItems[i].className = markerClass + " ap-m-filter-bubble active";
+        }
+        else {
+            totalItems[i].className = markerClass + " ap-m-filter-bubble";
+        }
+    }
+}
+
+function ClearDestinationFilter() {
+    if (debugFilter)
+        console.log("ClearDestinationFilter");
+
+    destinations = [];
+
+    SetFilterStyle("destinationFilterItem", destinations);
+
+    ApplyFilter();
+}
+
+function HideByNights(info) {
+    return parseInt(info) < parseInt(minNights) || parseInt(info) > parseInt(maxNights);
+}
+
+function HideByPrice(info) {
+    return parseInt(info) < parseInt(minPrice) || parseInt(info) > parseInt(maxPrice);
+}
+
+function HideByExperieces(info) {
+    if (experiences.length === 0) {
+        return false;
+    }
+
+    for (var i = 0; i < experiences.length; i++) {
+        if (!info.includes('#' + experiences[i] + '#')) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function HideByDestinations(info) {
+    if (destinations.length === 0) {
+        return false;
+    }
+
+    for (var i = 0; i < destinations.length; i++) {
+        if (!info.includes('#' + destinations[i] + '#')) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+function OrderbyFilter(code) {
+    if (debugFilter)
+        console.log("OrderbyFilter" + code);
+
+    var boxes = document.getElementsByClassName("box");
+    var gridBox = document.getElementById("masterGrid");
+
+    var itemsToOrder = [];
+    for (let i = 0; i < boxes.length; i++) {
+        itemsToOrder[i] = {
+            id: i,
+            domObj: boxes[i],
+            price: parseInt(boxes[i].getAttribute("data-price")),
+            nights: parseInt(boxes[i].getAttribute("data-nights"))
+        };
+    }
+
+    while (gridBox.children.length > 0) {
+        gridBox.removeChild(gridBox.children[0]);
+    }
+
+    if (code === 'prezzo_desc') {
+        let ordered = itemsToOrder.sort((a, b) => - a.price + b.price);
+        for (let i = 0; i < ordered.length; i++) {
+            gridBox.appendChild(ordered[i].domObj);
+        }
+    }
+    else if (code === 'prezzo_asc') {
+        let ordered = itemsToOrder.sort((a, b) => a.price - b.price);
+        for (let i = 0; i < ordered.length; i++) {
+            gridBox.appendChild(ordered[i].domObj);
+        }
+    } else if (code === 'nights_desc') {
+        let ordered = itemsToOrder.sort((a, b) => - a.nights + b.nights);
+        for (let i = 0; i < ordered.length; i++) {
+            gridBox.appendChild(ordered[i].domObj);
+        }
+    }
+    else {
+        let ordered = itemsToOrder.sort((a, b) => a.nights - b.nights);
+        for (let i = 0; i < ordered.length; i++) {
+            gridBox.appendChild(ordered[i].domObj);
+        }
+    }
+
+    return false;
+}
+    </script>
+
+    <p class="" style="display: none;">
+        <a href="#">
+            <h3 class="mb-0">Trip Finder </h3>
+        </a>
+        Trova il viaggio perfetto per te.
+    </p>
+
+</amp-sidebar>
+
+<amp-sidebar id="sidebar-user"
+             class="sidebar"
+             layout="nodisplay"
+             side="right">
+    <i class="material-icons" on="tap:sidebar-user.close">arrow_forward</i>
+    <div style="height: 56px;display: table; margin-top:24px">
+        <div class="thumb-circle">
+            <amp-img src="https://cdn.framework7.io/placeholder/people-160x160-1.jpg" layout="fill" class="coverfit"/>
+        </div>
+        <h3 class="px-12" style="display:table-cell; vertical-align: middle; line-height: 1.1em;"> </h3>
+    </div>
+
+
+    <ul class="my-36 list-unstyled">
+        <!--<li>Notifiche <span class="chip-special-sm">5</span> </li>-->
+        <li><a href="/my#wishlist">La mia lista</a></li>
+        <li><a href="/my#purchased">Viaggi acquistati</a></li>
+        <li><a href="/my#saved">Viaggi salvati</a></li>
+        <li><a href="/my">Area privata</a></li>
+        <li><a href="/identity/account/logout">Logout</a></li>
+    </ul>
+
+</amp-sidebar>
+
+    
+
+<amp-sidebar id="sidebar-filters"
+             class="sidebar"
+             layout="nodisplay"
+             side="right">
+    <a href="#filters_close" on="tap:sidebar-search.close"><i class="material-icons">arrow_forward</i></a>
+    <h2>
+        Filtri
+    </h2>
+    <label for="select-order my-24">Ordina per</label>
+    <select id="select-order" class="form-select select-lg" onchange="return OrderbyFilter(this.value);">
+        <option value="prezzo_asc">
+            Prezzo crescente
+        </option>
+        <option value="prezzo_desc">
+            Prezzo decrescente
+        </option>
+        <option value="nights_asc">
+            Notti crescenti
+        </option>
+        <option value="nights_desc">
+            Notti decrescenti
+        </option>
+    </select>
+    <div class="filters-list my-24">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div class="no-flex-shrink">
+                <label for="input-budget">Budget</label>
+            </div>
+            <div class="flex-shrink text-right" id="budgetFilterLabel">
+                Da 900 a 2980 €
+            </div>
+        </div>
+
+        <div>
+            <input class="multi-range" type="range" min="900" max="2980" step="1" value=900 onchange="FilterByMinPrice(this.value, 900, 2980)">
+            <input class="multi-range" type="range" min="900" max="2980" step="1" value=2980 onchange="FilterByMaxPrice(this.value, 900, 2980)">
+        </div>
+    </div>
+    <div class="filters-list my-24">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div class="no-flex-shrink">
+                <label for="input-budget">Notti</label>
+            </div>
+            <div class="flex-shrink text-right" id="nightsFilterLabel">
+                Da 6 a 21 notti
+            </div>
+        </div>
+
+        <div>
+            <input class="multi-range" type="range" min="6" max="21" step="1" value=6 onchange="FilterByMinNights(this.value, 6, 21)">
+            <input class="multi-range" type="range" min="6" max="21" step="1" value=21 onchange="FilterByMaxNights(this.value, 6, 21)">
+        </div>
+
+    </div>
+    <div class="filters-list my-24">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div class="no-flex-shrink">
+                <label for="input-budget">Esperienze</label>
+            </div>
+            <div class="flex-shrink text-right">
+                <a href="#" onclick="ClearExperienceFilter(); return false;"><small>Annulla</small></a>
+            </div>
+        </div>
+        <div class="py-12">
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="29" onclick="FilterByExperiences(29, this)"> Con amici </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="30" onclick="FilterByExperiences(30, this)"> Da solo </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="31" onclick="FilterByExperiences(31, this)"> Grand tour </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="37" onclick="FilterByExperiences(37, this)"> In citt&#xE0; </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="27" onclick="FilterByExperiences(27, this)"> In coppia </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="28" onclick="FilterByExperiences(28, this)"> In famiglia </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="33" onclick="FilterByExperiences(33, this)"> Natura e avventura </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="34" onclick="FilterByExperiences(34, this)"> On the road </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="36" onclick="FilterByExperiences(36, this)"> Storia e cultura </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="38" onclick="FilterByExperiences(38, this)"> Tour e mare </button>
+                <button class="experiencesFilterItem ap-m-filter-bubble" data-filterkey="39" onclick="FilterByExperiences(39, this)"> Viaggi di nozze </button>
+        </div>
+    </div>
+    <div class="filters-list my-24">
+        <div class="d-flex" style="justify-content: space-between;">
+            <div class="no-flex-shrink">
+                <label for="input-budget">Destinazioni</label>
+            </div>
+            <div class="flex-shrink text-right">
+                <a href="#" onclick="ClearDestinationFilter(); return false;"><small>Annulla</small></a>
+            </div>
+        </div>
+        <div class="py-12">
+            <button class="destinationFilterItem ap-m-filter-bubble" data-filterkey="67"  onclick="FilterByDestinations(67, this)"> Regno Unito </button>
+            <button class="destinationFilterItem ap-m-filter-bubble" data-filterkey="25"  onclick="FilterByDestinations(25, this)"> Stati Uniti </button>
+        </div>
+    </div>
+</amp-sidebar>
+
+
+<div class="cover-landing-search">
+        <amp-img alt="Stati Uniti"
+                 class="object-fit-cover"
+                 srcset="https://away.blob.core.windows.net/awayphotos/destinations/lg/Destinazioni_Stati%20Uniti.jpg 1200w, https://away.blob.core.windows.net/awayphotos/destinations/lg/Destinazioni_Stati%20Uniti.jpg 1920w"
+                 width="9"
+                 height="16"
+                 layout="fill">
+        </amp-img>
+    <div class="fade-to-black-v"></div>
+</div>
+
+<div class="row cover-title">
+    <div class="column" style="position:relative; z-index:4;">
+        <div class="title-travel white text-center strong">
+            <amp-fit-text width="8"
+                          height="1"
+                          layout="responsive">
+                Stati Uniti
+            </amp-fit-text>
+        </div>
+    </div>
+</div>
+
+<div class="container-fixed">
+    <div style="display: flex; justify-content: space-between;">
+        <div class="px-12">
+            <span class="white d-inline-block my-24" id="travelAvailableCounter"><strong>24</strong> viaggi trovati</span>
+        </div>
+        <div class="p-12" style="flex-direction: column; justify-content: flex-end;">
+            <a class="a-btn a-btn-sm a-btn-o" href="#filters" on="tap:sidebar-filters.toggle">
+                <i class="material-icons">filter_list</i>
+                <span class="d-inline-block px-12 white">Filtri</span>
+                <span class="d-inline-block px-12 yellow white" id="travelFiltersCounter"></span>
+            </a>
+        </div>
+    </div>
+    <div class="grid-box" id="masterGrid">
+            
+    <div class="box" data-experiences="#38#39#27#29#28#34#" data-periods="##" data-destinations="#25#2#" data-nights="21" data-price="2980">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'626');    }">
+                <i id="singleBoxFavorite_626" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/on-the-road-tra-california-e-hawaii-da-los-angeles-a-Honolulu'; }">&#x20AC; 2.980 x 21 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/on-the-road-tra-california-e-hawaii-da-los-angeles-a-Honolulu'; }">
+            <h4 class="title">West Coast? Further!</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/on-the-road-tra-california-e-hawaii-da-los-angeles-a-Honolulu'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/CaliforniaHawaii_00998_CM_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/CaliforniaHawaii_00998_CM_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/CaliforniaHawaii_00998_CM_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#31#29#27#30#37#34#39#" data-periods="##" data-destinations="#25#2#" data-nights="20" data-price="1954">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'628');    }">
+                <i id="singleBoxFavorite_628" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/stati-uniti-coast-to-coast-da-new-york-a-los-angeles-on-the-road'; }">&#x20AC; 1.954 x 20 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/stati-uniti-coast-to-coast-da-new-york-a-los-angeles-on-the-road'; }">
+            <h4 class="title">SIXTY-SIX DREAMS</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/stati-uniti-coast-to-coast-da-new-york-a-los-angeles-on-the-road'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Coast%20To%20Coast%20copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Coast%20To%20Coast%20copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Coast%20To%20Coast%20copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#27#34#37#33#" data-periods="##" data-destinations="#25#2#" data-nights="15" data-price="1612">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'636');    }">
+                <i id="singleBoxFavorite_636" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/alla-scoperta-della-east-coast-new-york-e-new-england'; }">&#x20AC; 1.612 x 15 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/alla-scoperta-della-east-coast-new-york-e-new-england'; }">
+            <h4 class="title">Big City, quiet love</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/alla-scoperta-della-east-coast-new-york-e-new-england'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/usa_new_england_foliage_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/usa_new_england_foliage_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/usa_new_england_foliage_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#37#27#28#34#" data-periods="##" data-destinations="#25#2#" data-nights="15" data-price="1450">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'446');    }">
+                <i id="singleBoxFavorite_446" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/stati-uniti-la-mitica-east-coast-on-the-road'; }">&#x20AC; 1.450 x 15 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/stati-uniti-la-mitica-east-coast-on-the-road'; }">
+            <h4 class="title">The Atlantic Dream</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/stati-uniti-la-mitica-east-coast-on-the-road'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Stati_Uniti_Boston_tramonto_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Stati_Uniti_Boston_tramonto_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Stati_Uniti_Boston_tramonto_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#31#28#27#34#33#38#" data-periods="##" data-destinations="#25#2#" data-nights="15" data-price="2326">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'726');    }">
+                <i id="singleBoxFavorite_726" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/stati-uniti-on-the-road-viaggio-da-chicago-a-santa-monica'; }">&#x20AC; 2.326 x 15 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/stati-uniti-on-the-road-viaggio-da-chicago-a-santa-monica'; }">
+            <h4 class="title">JOURNEY 66</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/stati-uniti-on-the-road-viaggio-da-chicago-a-santa-monica'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/stati_uniti_route_66_tramonto.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/stati_uniti_route_66_tramonto.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/stati_uniti_route_66_tramonto.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#31#33#28#27#37#" data-periods="##" data-destinations="#25#2#" data-nights="16" data-price="1531">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'779');    }">
+                <i id="singleBoxFavorite_779" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-da-seattle-al-wyoming'; }">&#x20AC; 1.531 x 16 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-da-seattle-al-wyoming'; }">
+            <h4 class="title">FIVE IS BETTER THAN ONE</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-da-seattle-al-wyoming'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/5StatiUSA_01139_CM_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/5StatiUSA_01139_CM_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/5StatiUSA_01139_CM_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#27#28#34#" data-periods="##" data-destinations="#25#2#" data-nights="15" data-price="2050">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'654');    }">
+                <i id="singleBoxFavorite_654" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-tra-chicago-wyoming-e-montana'; }">&#x20AC; 2.050 x 15 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-tra-chicago-wyoming-e-montana'; }">
+            <h4 class="title">WILD, WILD RANGER</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-tra-chicago-wyoming-e-montana'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/stati_uniti_yellowstone_np_bufali.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/stati_uniti_yellowstone_np_bufali.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/stati_uniti_yellowstone_np_bufali.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#34#29#27#37#" data-periods="##" data-destinations="#25#2#" data-nights="14" data-price="1900">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'635');    }">
+                <i id="singleBoxFavorite_635" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/on-the-road-da-chicago-a-new-orleans-tra-jazz-&amp;-blues'; }">&#x20AC; 1.900 x 14 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/on-the-road-da-chicago-a-new-orleans-tra-jazz-&amp;-blues'; }">
+            <h4 class="title">BLUES SISTERS</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/on-the-road-da-chicago-a-new-orleans-tra-jazz-&amp;-blues'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/usa_tennessee_nashville_insegna_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/usa_tennessee_nashville_insegna_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/usa_tennessee_nashville_insegna_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#31#37#28#34#36#" data-periods="##" data-destinations="#25#2#" data-nights="13" data-price="1428">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'777');    }">
+                <i id="singleBoxFavorite_777" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/stati-uniti-viaggio-in-texas-tra-blues-e-relax'; }">&#x20AC; 1.428 x 13 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/stati-uniti-viaggio-in-texas-tra-blues-e-relax'; }">
+            <h4 class="title">HOUSTON, WE HAVE TEXAS!</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/stati-uniti-viaggio-in-texas-tra-blues-e-relax'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/texas_austin_statua_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/texas_austin_statua_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/texas_austin_statua_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#27#28#39#38#" data-periods="##" data-destinations="#25#2#" data-nights="13" data-price="1850">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'632');    }">
+                <i id="singleBoxFavorite_632" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/tour-delle-hawaii-honolulu-big-island-e-lanai'; }">&#x20AC; 1.850 x 13 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/tour-delle-hawaii-honolulu-big-island-e-lanai'; }">
+            <h4 class="title">I Lava You</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/tour-delle-hawaii-honolulu-big-island-e-lanai'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/hawaii_vulcano_kilauea.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/hawaii_vulcano_kilauea.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/hawaii_vulcano_kilauea.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#33#34#31#29#27#" data-periods="##" data-destinations="#25#2#" data-nights="13" data-price="1428">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'678');    }">
+                <i id="singleBoxFavorite_678" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/west-degli-stati-uniti-viaggio-dalle-rocky-mountains-allo-utah'; }">&#x20AC; 1.428 x 13 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/west-degli-stati-uniti-viaggio-dalle-rocky-mountains-allo-utah'; }">
+            <h4 class="title">DIRECTED BY SERGIO LEONE</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/west-degli-stati-uniti-viaggio-dalle-rocky-mountains-allo-utah'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Selvaggio%20Ovest_copertina-1.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Selvaggio%20Ovest_copertina-1.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Selvaggio%20Ovest_copertina-1.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#37#28#27#34#" data-periods="##" data-destinations="#25#2#" data-nights="12" data-price="1245">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'467');    }">
+                <i id="singleBoxFavorite_467" class="material-icons">favorite</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/california-in-famiglia-da-san-francisco-a-orange-county'; }">&#x20AC; 1.245 x 12 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/california-in-famiglia-da-san-francisco-a-orange-county'; }">
+            <h4 class="title">Dreaming&#x2026; together</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/california-in-famiglia-da-san-francisco-a-orange-county'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/ClassicCaliforniaFamily_00126_CM_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/ClassicCaliforniaFamily_00126_CM_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/ClassicCaliforniaFamily_00126_CM_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#37#27#28#34#" data-periods="##" data-destinations="#25#2#" data-nights="11" data-price="1250">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'471');    }">
+                <i id="singleBoxFavorite_471" class="material-icons">favorite</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/da-boston-a-washington-le-capitali-dell-east-coast'; }">&#x20AC; 1.250 x 11 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/da-boston-a-washington-le-capitali-dell-east-coast'; }">
+            <h4 class="title">PATRIOTISM FIRST OF ALL</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/da-boston-a-washington-le-capitali-dell-east-coast'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/usa_washington_dc_statua_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/usa_washington_dc_statua_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/usa_washington_dc_statua_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#30#27#28#34#" data-periods="##" data-destinations="#67#25#4#2#" data-nights="11" data-price="1250">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'618');    }">
+                <i id="singleBoxFavorite_618" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/le-isole-ebridi-tra-pianure-e-scogliere-a-picco-sull-oceano'; }">&#x20AC; 1.250 x 11 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/le-isole-ebridi-tra-pianure-e-scogliere-a-picco-sull-oceano'; }">
+            <h4 class="title">Viking Vibes</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/le-isole-ebridi-tra-pianure-e-scogliere-a-picco-sull-oceano'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Scozia_00290_CM_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Scozia_00290_CM_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Scozia_00290_CM_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#27#28#34#36#" data-periods="##" data-destinations="#25#2#" data-nights="11" data-price="1225">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'419');    }">
+                <i id="singleBoxFavorite_419" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/north-carolina-e-virginia-viaggio-on-the-road-sulla-east-coast'; }">&#x20AC; 1.225 x 11 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/north-carolina-e-virginia-viaggio-on-the-road-sulla-east-coast'; }">
+            <h4 class="title">On the (artistic) road</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/north-carolina-e-virginia-viaggio-on-the-road-sulla-east-coast'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Copertina_lago_Asheville.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Copertina_lago_Asheville.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Copertina_lago_Asheville.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#27#30#29#34#" data-periods="##" data-destinations="#25#2#" data-nights="10" data-price="2500">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'565');    }">
+                <i id="singleBoxFavorite_565" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/da-new-york-alle-cascate-del-niagara-e-washington'; }">&#x20AC; 2.500 x 10 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/da-new-york-alle-cascate-del-niagara-e-washington'; }">
+            <h4 class="title">Un Amish alla Casa Bianca</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/da-new-york-alle-cascate-del-niagara-e-washington'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/stati_uniti_casa_bianca.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/stati_uniti_casa_bianca.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/stati_uniti_casa_bianca.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#27#29#34#33#" data-periods="##" data-destinations="#25#2#" data-nights="10" data-price="1232">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'677');    }">
+                <i id="singleBoxFavorite_677" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/grand-tour-del-new-england-boston-portland-e-cape-cod'; }">&#x20AC; 1.232 x 10 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/grand-tour-del-new-england-boston-portland-e-cape-cod'; }">
+            <h4 class="title">Witch on the beach</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/grand-tour-del-new-england-boston-portland-e-cape-cod'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/GrandTourNewEngland_00328_CM_copertina-1.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/GrandTourNewEngland_00328_CM_copertina-1.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/GrandTourNewEngland_00328_CM_copertina-1.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#27#33#34#38#" data-periods="##" data-destinations="#25#2#" data-nights="10" data-price="1220">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'680');    }">
+                <i id="singleBoxFavorite_680" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/viaggio-in-florida-da-miami-a-disneyworld'; }">&#x20AC; 1.220 x 10 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/viaggio-in-florida-da-miami-a-disneyworld'; }">
+            <h4 class="title">Tropico Forever</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/viaggio-in-florida-da-miami-a-disneyworld'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/IlMeglioFlorida_00334_CM_copertina-1.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/IlMeglioFlorida_00334_CM_copertina-1.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/IlMeglioFlorida_00334_CM_copertina-1.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#30#27#33#" data-periods="##" data-destinations="#25#2#" data-nights="9" data-price="1212">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'469');    }">
+                <i id="singleBoxFavorite_469" class="material-icons">favorite</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/avventura-in-alaska-safari-sul-ghiaccio'; }">&#x20AC; 1.212 x 9 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/avventura-in-alaska-safari-sul-ghiaccio'; }">
+            <h4 class="title">Rock my glacier!</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/avventura-in-alaska-safari-sul-ghiaccio'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/alaska_adventure_wrangell_st_elias_np_kennicott_glacier.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/alaska_adventure_wrangell_st_elias_np_kennicott_glacier.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/alaska_adventure_wrangell_st_elias_np_kennicott_glacier.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#27#33#34#37#" data-periods="##" data-destinations="#25#2#" data-nights="9" data-price="1202">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'670');    }">
+                <i id="singleBoxFavorite_670" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/tennessee-e-kentucky-viaggio-negli-stati-uniti'; }">&#x20AC; 1.202 x 9 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/tennessee-e-kentucky-viaggio-negli-stati-uniti'; }">
+            <h4 class="title">WHISKEY, BOURBON &amp; ROCK &#x2018;N ROLL</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/tennessee-e-kentucky-viaggio-negli-stati-uniti'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/TourDelSud_Copertina-1.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/TourDelSud_Copertina-1.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/TourDelSud_Copertina-1.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#33#37#34#" data-periods="##" data-destinations="#25#2#" data-nights="9" data-price="1158">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'699');    }">
+                <i id="singleBoxFavorite_699" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-oregon-a-360&#xB0;'; }">&#x20AC; 1.158 x 9 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-oregon-a-360&#xB0;'; }">
+            <h4 class="title">CHERRY FOREST</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/viaggio-negli-stati-uniti-oregon-a-360&#xB0;'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Stati%20Uniti_Crater_lake_tramonto_copertina.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Stati%20Uniti_Crater_lake_tramonto_copertina.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Stati%20Uniti_Crater_lake_tramonto_copertina.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#28#27#29#37#34#" data-periods="##" data-destinations="#25#67#2#4#" data-nights="8" data-price="1100">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'622');    }">
+                <i id="singleBoxFavorite_622" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/castelli-mostri-e-verdi-terre-sconfinte-scopri-le-highlands'; }">&#x20AC; 1.100 x 8 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/castelli-mostri-e-verdi-terre-sconfinte-scopri-le-highlands'; }">
+            <h4 class="title">Macbeth Revival</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/castelli-mostri-e-verdi-terre-sconfinte-scopri-le-highlands'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/Copertina_Scozia.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/Copertina_Scozia.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/Copertina_Scozia.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#29#27#33#" data-periods="##" data-destinations="#25#2#" data-nights="8" data-price="2350">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'717');    }">
+                <i id="singleBoxFavorite_717" class="material-icons">favorite_border</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/viaggio-in-alaska-tra-avventura-e-sport-glaciali'; }">&#x20AC; 2.350 x 8 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/viaggio-in-alaska-tra-avventura-e-sport-glaciali'; }">
+            <h4 class="title">SALMON-ADVENTURE</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/viaggio-in-alaska-tra-avventura-e-sport-glaciali'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/alaska_orso_salmone.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/alaska_orso_salmone.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/alaska_orso_salmone.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+            
+    <div class="box" data-experiences="#37#27#28#34#" data-periods="##" data-destinations="#25#2#" data-nights="6" data-price="900">
+        <a href="#" class="favorite" onclick="{ return ToggleSingleBoxFavourite(this,'472');    }">
+                <i id="singleBoxFavorite_472" class="material-icons">favorite</i>
+        </a>
+        <div class="chip" onclick="{ location.href = '/travel/dai-grattacieli-di-new-york-alle-cascate-del-niagara'; }">&#x20AC; 900 x 6 Notti</div>
+        <div class="box-title" onclick="{ location.href = '/travel/dai-grattacieli-di-new-york-alle-cascate-del-niagara'; }">
+            <h4 class="title">NIAGARA FALL(S) IN LOVE</h4>
+        </div>
+
+        <div class="box-inner" onclick="{ location.href = '/travel/dai-grattacieli-di-new-york-alle-cascate-del-niagara'; }">
+            <amp-img alt="TODO"
+                     class="object-fit-cover"
+                     width="640"
+                     height="457"
+                     layout="fill"
+                     srcset="https://away.blob.core.windows.net/awayphotos/travels/sm/usa_niagara_falls_copertina-1.jpg 400w, https://away.blob.core.windows.net/awayphotos/travels/md/usa_niagara_falls_copertina-1.jpg 800w, https://away.blob.core.windows.net/awayphotos/travels/lg/usa_niagara_falls_copertina-1.jpg 1600w">
+            </amp-img>
+        </div>
+    </div>
+
+
+    </div>
+    <!-- SalesForce bot -->
+    <amp-script width="200" height="50" script="hello-world">
+  	<button>Hello amp-script!</button>
+    </amp-script>
+    <script id="hello-world" type="text/plain" target="amp-script">
+        var initESW = function (gslbBaseURL) {
+            embedded_svc.settings.displayHelpButton = true; //O falso
+            embedded_svc.settings.language = 'it'; //Ad esempio, immettere 'en' o 'en-US'
+            //embedded_svc.settings.defaultMinimizedText = '...'; //(Per impostazione predefinita viene usato Chatta con un esperto)
+            //embedded_svc.settings.disabledMinimizedText = '...'; //(Per impostazione predefinita viene usato Agente offline)
+            //embedded_svc.settings.loadingText = ''; //(Per impostazione predefinita viene usato Caricamento)
+            //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Imposta il dominio per la propria distribuzione in modo che i visitatori possano spostarsi all'interno dei sottodomini durante una sessione di chat)
+            // Impostazioni per Chat
+            //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+            // Returns a valid button ID.
+            //};
+            //embedded_svc.settings.prepopulatedPrechatFields = {}; //Imposta l'autocompilazione dei campo del modulo pre-chat
+            //embedded_svc.settings.fallbackRouting = []; //Un array di ID pulsante, ID utente o userId_buttonId
+            //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Per impostazione predefinita viene usato Contattaci)
+            embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+            embedded_svc.settings.entryFeature = 'LiveAgent';
+            embedded_svc.init(
+                'https://cs102.salesforce.com',
+                'https://partial-amaka.cs102.force.com/liveAgentSetupFlow',
+                gslbBaseURL,
+                '00D1j0000008f8e',
+                'Assistenti_Chat',
+                {
+                    baseLiveAgentContentURL: 'https://c.la1-c1cs-cdg.salesforceliveagent.com/content',
+                    deploymentId: '5721j0000008Oqf',
+                    buttonId: '5731j0000008Ovu',
+                    baseLiveAgentURL: 'https://d.la1-c1cs-cdg.salesforceliveagent.com/chat',
+                    eswLiveAgentDevName: 'Assistenti_Chat',
+                    isOfflineSupportEnabled: false
+                }
+            );
+        };
+        if (!window.embedded_svc) {
+            var s = document.createElement('script');
+            s.setAttribute('src', 'https://cs102.salesforce.com/embeddedservice/5.0/esw.min.js');
+            s.onload = function () {
+                initESW(null);
+            };
+            document.body.appendChild(s);
+        } else {
+            initESW('https://service.force.com');
+        }
+    </script>
+
+    <a id="liveagent_button_online_5731j0000008Ovu" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5731j0000008Ovu')"><!-- Contenuto chat online --></a><div id="liveagent_button_offline_5731j0000008Ovu" style="display: none;"><!-- Contenuto chat offline --></div>
+    <script type="text/javascript">
+        if (!window._laq) { window._laq = []; }
+        window._laq.push(function () {
+            liveagent.showWhenOnline('5731j0000008Ovu', document.getElementById('liveagent_button_online_5731j0000008Ovu'));
+            liveagent.showWhenOffline('5731j0000008Ovu', document.getElementById('liveagent_button_offline_5731j0000008Ovu'));
+        });
+    </script>
+</div>
+
+    <amp-position-observer on="enter:showAnim.start;"
+                           layout="nodisplay">
+    </amp-position-observer>
+
+
+    <div class="cta">
+        <div class="row" style="max-width: 960px; margin-left: auto; margin-right: auto;">
+            <div class="column-2 lg-p-36">
+                <h2 class="mega-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</h2>
+            </div>
+            <div class="column my-36 lg-p-36">
+                <a class="a-btn primary">
+                    Scopri di più...
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row" style="max-width: 1280px; margin-left: auto; margin-right: auto;">
+    <div class="column" style="margin-bottom: 36px;">
+        <h4 class="uppercase">Newsletter</h4>
+        <p>Iscriviti alla nostra newsletter, non ti romperemo le balle!</p>
+        <div class="row">
+            <div class="sm-column-2"><input type="email" placeholder="La tua email" class="w-100" /></div>
+            <div class="sm-column"><a class="a-btn a-btn-l primary w-100" href="#">Invia</a></div>
+        </div>
+    </div>
+    <div class="column text-center" style="margin-bottom: 36px;">
+        <h4 class="uppercase">We are social</h4>
+        <div css="d-block">
+            <!-- Facebook -->
+            <a href="#" class="inline-block icon" target="_blank" aria-label="Link to Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="47.2" viewbox="0 0 56 55">
+                    <title>Facebook</title>
+                    <path style="fill:#fff" d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43"></path>
+                </svg>
+            </a>
+            <!-- Instagram -->
+            <a href="#" class="inline-block icon" target="_blank" aria-label="Link to insta gram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 54 54">
+                    <title>instagram</title>
+                    <path style="fill:#fff" d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z"></path>
+                </svg>
+            </a>
+            <!-- Mail -->
+            <a href="#" class="inline-block icon" target="_blank" aria-label="Link to E mail">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="36.8" viewbox="0 0 56 43">
+                    <title>email</title>
+                    <path style="fill:#fff" d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z"></path>
+                </svg>
+            </a>
+            <!-- <i class="material-icons px-12">attachment</i> -->
+        </div>
+    </div>
+    <div class="column" style="margin-bottom: 36px;">
+        <h4 class="uppercase">Trova il tuo viaggio</h4>
+        <amp-accordion animate expand-single-section>
+            <section>
+                <h4>DESTINAZIONI</h4>
+                <amp-list layout="fixed-height"
+                          height="40"
+                          src="/FooterAmp/GetRootCategories"
+                          binding="no">
+                    <template type="amp-mustache">
+                        <div><a href="{{ url }}"> {{ title }}</a></div>
+                    </template>
+                </amp-list>
+            </section>
+            <section>
+                <h4>ESPERIENZE</h4>
+                <amp-list layout="fixed-height"
+                          height="40"
+                          src="/FooterAmp/GetExperiences"
+                          binding="no">
+                    <template type="amp-mustache">
+                        <div><a href="{{ url }}">{{ title }}</a></div>
+                    </template>
+                </amp-list>
+            </section>
+            <section>
+                <h4>PERIODO</h4>
+                <amp-list layout="fixed-height"
+                          height="40"
+                          src="/FooterAmp/GetPeriods"
+                          binding="no">
+                    <template type="amp-mustache">
+                        <div><a href="{{ url }}">{{ title }}</a></div>
+                    </template>
+                </amp-list>
+            </section>
+        </amp-accordion>
+    </div>
+    <div class="row">
+        <div class="column">
+            <p>
+                <strong>AMAKA</strong>
+                <br>
+                Away Srl<br>
+                Via Savona 97, 20144 Milano <br>
+                P.IVA 08199460968<br>
+                REA: MI-2009233<br>
+                Registro imprese n. 08199460968<br>
+                Capitale sociale € 10.000,00<br>
+            </p>
+        </div>
+        <div class="column">
+
+        </div>
+    </div>
+</div>
+    </footer>
+
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+            {
+            "vars": {
+            "gtag_id": "UA-130508362-2",
+            "config": {
+            "UA-130508362-2" : { "groups": "default" }
+            }
+            },
+            "triggers": {
+            "trackPageview": {
+            "on": "visible",
+            "request": "pageview"
+            }
+            }
+            }
+        </script>
+    </amp-analytics>
+</body>
+</html>
