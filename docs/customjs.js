@@ -1,4 +1,5 @@
- <style type='text/css'>
+console.log("amp-script here"); 
+<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Salesforce Sans", sans-serif;
