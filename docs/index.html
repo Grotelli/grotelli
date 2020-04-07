@@ -93,8 +93,8 @@ Just a test
 .embeddedServiceSidebarExtendedHeader .content .message { display:none; }
 </style>
 
- 
-	<amp-script layout="container" src="https://service.force.com/embeddedservice/5.0/esw.min.js">
+ <amp-iframe>
+	<script src="https://service.force.com/embeddedservice/5.0/esw.min.js">
 <script type='text/javascript'>
   var initESW = function(gslbBaseURL) {
 	embedded_svc.settings.displayHelpButton = true; //Or false
@@ -146,7 +146,7 @@ if (!window.embedded_svc) {
 	initESW('https://service.force.com');
 }
 </script>
-</amp-script>
+</amp-iframe>
 
 </body>
 </html>
