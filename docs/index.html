@@ -30,7 +30,7 @@
 <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 <script async custom-element="amp-nested-menu" src="https://cdn.ampproject.org/v0/amp-nested-menu-0.1.js"></script>
 <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
-<script async custom-element="amp-script" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
+<script custom-element="amp-script" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 
 <meta name="amp-script-src" content="sha384-X8xW7VFd-a-kgeKjsR4wgFSUlffP7x8zpVmqC6lm2DPadWUnwfdCBJ2KbwQn6ADE sha384-nNFaDRiLzgQEgiC5kP28pgiJVfNLVuw-nP3VBV-e2s3fOh0grENnhllLfygAuU_M sha384-u7NPnrcs7p4vsbGLhlYHsId_iDJbcOWxmBd9bhVuPoA_gM_he4vyK6GsuvFvr2ym sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA">
@@ -3846,9 +3846,7 @@ function OrderbyFilter(code) {
 
     </div>
     <!-- SalesForce bot -->
-    <amp-script width="200" height="50" script="hello-world">
-  	<button>Hello amp-script!</button>
-    </amp-script>
+    <amp-script script="hello-world"></amp-script>
     <script id="hello-world" type="text/plain" target="amp-script">
         var initESW = function (gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //O falso
