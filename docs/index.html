@@ -3846,8 +3846,8 @@ function OrderbyFilter(code) {
 
     </div>
     <!-- SalesForce bot -->
-    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-    <script type='text/javascript'>
+    <amp-script layout="container"  src='https://service.force.com/embeddedservice/5.0/esw.min.js'>
+    <script target="amp-script">
         var initESW = function (gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //O falso
             embedded_svc.settings.language = 'it'; //Ad esempio, immettere 'en' o 'en-US'
@@ -3901,6 +3901,7 @@ function OrderbyFilter(code) {
             liveagent.showWhenOffline('5731j0000008Ovu', document.getElementById('liveagent_button_offline_5731j0000008Ovu'));
         });
     </script>
+        </amp-script>
 </div>
 
     <amp-position-observer on="enter:showAnim.start;"
