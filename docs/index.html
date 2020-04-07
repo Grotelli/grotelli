@@ -1,100 +1,19 @@
-<html>
+<!doctype html>
+<html ⚡>
 <head>
-<meta charset="utf-8">
-    <title>amp-script</title>
-    <link rel="canonical" href="self.html">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-      <script async src="https://cdn.ampproject.org/v0.js"></script>
-      <!--
-
-        ## Setup
-
-        First, you need to import the `amp-script` extension.
-      -->
-      <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-      <style amp-custom>
-        .amp-script-sample {
-          padding: 8px;
-        }
-        .amp-script-sample button {
-          background-color: #005AF0;
-          font-size: 16px;
-          font-weight: 700;
-          color: white;
-          border: none;
-          padding: 8px;
-          margin: 8px 0;
-        }
-        .amp-script-sample button[disabled] {
-          background-color: #f3f3f3;
-          color: #ccc;
-        }
-      </style>
-
-      <!--
-        For inline scripts you need to generate a CSP header. Read more about this in the [component documentation](/content/amp-dev/documentation/components/reference/amp-script-v0.1.md).
-      -->
-      <meta name="amp-script-src" content="sha384-X8xW7VFd-a-kgeKjsR4wgFSUlffP7x8zpVmqC6lm2DPadWUnwfdCBJ2KbwQn6ADE sha384-nNFaDRiLzgQEgiC5kP28pgiJVfNLVuw-nP3VBV-e2s3fOh0grENnhllLfygAuU_M sha384-u7NPnrcs7p4vsbGLhlYHsId_iDJbcOWxmBd9bhVuPoA_gM_he4vyK6GsuvFvr2ym sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA sha384-a93VCeQbvTG7y-NYFU4XSZnhfxIjDIhqdCVXo1agLB4rIO42b2uApwLDJTbpp8Lf sha384-dAu65agElRjCXj-rGQDqxs6zS7TTtsmZjUcrWr3DYhd5QFAqDbs1-TIjEjnh18hc sha384-4EZxRMqO6aRJJxSbGUImqjQSKBtRwK6toXIcLsbNzk3hgughmm4DT0O69vzU3424 sha384-GYh_N9Kb-4bgPMInXsxx-OQHPmYXM0KG4-EUSQlDqTAM8o1WcVyfGUf5x2XYyRKQ sha384-JJ8hybcP8hhYy9N0ruZaJF5DqeLX5R5Aa1Kd4OPrB26C_2Gy33RFc4Z_IBQel0MA">
-  </head>
-  <body>
-      <!--
-        ## Basic usage
-
-        An amp-script element can load a JavaScript file from a URL. This is usually the best way to integrate a script as the browser needs to download the script only once.
-      -->
-      <amp-script layout="container" src="https://service.force.com/embeddedservice/5.0/esw.min.js" class="amp-script-sample">
-	  <script target="amp-script">
-	  var initESW = function(gslbBaseURL) {
-		embedded_svc.settings.displayHelpButton = true; //Or false
-		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-		embedded_svc.settings.autoOpenPostChat = true;
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-
-		// Settings for Chat
-		//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-			// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-			// Returns a valid button ID.
-		//};
-		//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-		//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-		//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-
-		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-		embedded_svc.settings.entryFeature = 'LiveAgent';
-
-		embedded_svc.init(
-			'https://gianluca-dev-ed.my.salesforce.com',
-			'https://gianlu-developer-edition.eu18.force.com/',
-			gslbBaseURL,
-			'00D0Y000001kEAn',
-			'Chat_Agents',
-			{
-				baseLiveAgentContentURL: 'https://c.la1-c2-fra.salesforceliveagent.com/content',
-				deploymentId: '5721n0000008jZI',
-				buttonId: '5731n000000CrCj',
-				baseLiveAgentURL: 'https://d.la1-c2-fra.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'Chat_Agents',
-				isOfflineSupportEnabled: false
-			}
-		);
-	};
-
-	if (!window.embedded_svc) {
-		var s = document.createElement('script');
-		s.setAttribute('src', 'https://gianluca-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-		s.onload = function() {
-			initESW(null);
-		};
-		document.body.appendChild(s);
-	} else {
-		initESW('https://service.force.com');
-	}
-	</script>
-      </amp-script>
+  <meta charset="utf-8">
+  <title>My AMP Page</title>
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <style amp-custom>
+    h1 {
+      margin: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello AMPHTML World!</h1>
 </body>
 </html>
