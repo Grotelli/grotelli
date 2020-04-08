@@ -26,6 +26,7 @@
 <script async custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js"></script>
 <script async custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+	
 <script async custom-element="amp-addthis" src="https://cdn.ampproject.org/v0/amp-addthis-0.1.js"></script>
 <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 <script async custom-element="amp-nested-menu" src="https://cdn.ampproject.org/v0/amp-nested-menu-0.1.js"></script>
@@ -3845,10 +3846,29 @@ function OrderbyFilter(code) {
 
     </div>
     <!-- SalesForce bot -->
-    <amp-script script="hello-world"></amp-script>
-    <script id="hello-world" target="amp-script">
+   <amp-iframe width="600"
+  height="400"
+  title="Google map pin on Googleplex, Mountain View CA"
+  layout="responsive"
+  sandbox="allow-scripts allow-same-origin allow-popups"
+  frameborder="0"
+  src="https://service.force.com/embeddedservice/5.0/esw.min.js">
+	   <style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Salesforce Sans", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+	@font-face {
+		font-family: 'Salesforce Sans';
+		src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+		url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+	}
+</style>
 
-
+<!-- Start of Invitations -->
 <div class="embeddedServiceInvitation" id="snapins_invite"  aria-live="assertive" role="dialog" aria-atomic="true">
 	<div class="embeddedServiceInvitationHeader" aria-labelledby="snapins_titletext" aria-describedby="snapins_bodytext">
         <img id="embeddedServiceAvatar"/>
@@ -3894,6 +3914,8 @@ function OrderbyFilter(code) {
 	})();
 </script>
 <!-- End of Invitations -->
+
+
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
@@ -3945,6 +3967,7 @@ function OrderbyFilter(code) {
 		initESW('https://service.force.com');
 	}
 </script>
+</amp-iframe>
 </div>
 
     <amp-position-observer on="enter:showAnim.start;"
