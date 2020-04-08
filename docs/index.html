@@ -1,7 +1,8 @@
 
 <!doctype html>
 <html ⚡ lang="en">
-   <meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="description" content="This is the AMP Boilerplate.">
 <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
@@ -33,7 +34,8 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
 
 <meta name="amp-script-src" content="sha384-lcEr1axrGOkJXlLfMBfy8h6FR_hiSgKwFZ_-V-_bYJYIg0-m2aPArIlPOXFB_qkV sha384-ISCguelFfkDAEqQ73FKxXgHlp90PoDVr1rJtVUQ8nkUJQugyNOStylJX-qb-pcGS" />
-	<style amp-custom>
+
+<style amp-custom>
        .css-button-rounded {
     background: #feed34;
     text-align: center;
@@ -3844,8 +3846,11 @@ function OrderbyFilter(code) {
 
     </div>
     <!-- SalesForce bot -->
-	<amp-iframe id="amp-iframe" title="Cute dog video" width="500" height="500" layout="responsive" sandbox="allow-scripts allow-popups" allowfullscreen frameborder="0" src="https://www.samuelweb.it/livechat/chat.html" [src]="myIframeUrl">
-    </amp-iframe>
+  <amp-iframe id="amp-iframe" title="Cute dog video" width="600" height="600" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://grotelli.github.io/grotelli/chat.html" [src]="myIframeUrl">
+      <amp-img layout="fill" src="https://foo.com/foo.png" placeholder>
+	</amp-iframe>
+   
+
 </div>
 
     <amp-position-observer on="enter:showAnim.start;"
