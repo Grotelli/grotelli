@@ -204,7 +204,7 @@
 <script type='text/javascript'>
 	(function() {
 		document.getElementById('closeInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); };
-		document.getElementById('rejectInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }; // use this API call to reject invitations
+		//document.getElementById('rejectInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }; // use this API call to reject invitations
 		document.getElementById('acceptInvite').onclick = function() { embedded_svc.inviteAPI.inviteButton.acceptInvite(); }; // use this API call to start chat from invitations
 		document.addEventListener('keyup', function(event) { if (event.keyCode == 27) { embedded_svc.inviteAPI.inviteButton.rejectInvite(); }})
 	})();
@@ -219,7 +219,8 @@
 		embedded_svc.settings.avatarImgURL = "https://yt3.ggpht.com/a-/AAuE7mC_oPQ5AZoli-3nwDFxdbeGGbq5NXZ4E1ECXQ=s900-mo-c-c0xffffffff-rj-k-no";
 		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
+		embedded_svc.settings.defaultMinimizedText = 'Online Chat'; //(Defaults to Chat with an Expert)
+            	embedded_svc.settings.disabledMinimizedText = 'Agente Offline'; //(Defaults to Agent Offline)
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
