@@ -38,6 +38,12 @@
     </div>
 
     <style type='text/css'>
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+	    
       #snapins_invite { 
 		width: 100%;
 		background-color: #C6C6C6; 
@@ -267,6 +273,20 @@
 	} else {
 		initESW('https://service.force.com');
 	}
+</script>
+	<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementsByClassName(".embeddedServiceSidebarExtendedHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 </script>
 </body>
 </html>
