@@ -4,78 +4,64 @@
 </head>
 	<body>
 <style type='text/css'>
-	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #F8B333;
-		font-family: "Arial", sans-serif;
-	}
-	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #F8B333;
-	}
+    .embeddedServiceHelpButton .helpButton .uiButton {
+        background-color: #005290;
+        font-family: "Salesforce Sans", sans-serif;
+    }
+    .embeddedServiceHelpButton .helpButton .uiButton:focus {
+        outline: 1px solid #005290;
+    }
+    @font-face {
+        font-family: 'Salesforce Sans';
+        src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+        url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
+    }
 </style>
-
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
-var initESW = function(gslbBaseURL) {
-embedded_svc.settings.displayHelpButton = true; //O falso
-embedded_svc.settings.language = ''; //Ad esempio, immettere 'en' o 'en-US'
-
-
-
-//embedded_svc.settings.defaultMinimizedText = '...'; //(Per impostazione predefinita viene usato Chatta con un esperto)
-//embedded_svc.settings.disabledMinimizedText = '...'; //(Per impostazione predefinita viene usato Agente offline)
-
-
-
-//embedded_svc.settings.loadingText = ''; //(Per impostazione predefinita viene usato Caricamento)
-//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Imposta il dominio per la propria distribuzione in modo che i visitatori possano spostarsi all'interno dei sottodomini durante una sessione di chat)
-
-
-
-// Impostazioni per Chat
-//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-// Returns a valid button ID.
-//};
-//embedded_svc.settings.prepopulatedPrechatFields = {}; //Imposta l'autocompilazione dei campo del modulo pre-chat
-//embedded_svc.settings.fallbackRouting = []; //Un array di ID pulsante, ID utente o userId_buttonId
-//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Per impostazione predefinita viene usato Contattaci)
-
-
-
-embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-embedded_svc.settings.entryFeature = 'LiveAgent';
-
-
-
-embedded_svc.init(
-'https://giamoel-app--test.my.salesforce.com',
-'https://test-fgiacomel.cs100.force.com',
-gslbBaseURL,
-'00D1x0000000PIi',
-'LiveAgent_Snap_in',
-{
-baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
-deploymentId: '5721x000000Cb4Y',
-buttonId: '5731x000000CcNk',
-baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
-eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1x000000Cay6EAC_17d8032a83b',
-isOfflineSupportEnabled: true
-}
-);
-};
-
-
-
-if (!window.embedded_svc) {
-var s = document.createElement('script');
-s.setAttribute('src', 'https://giamoel-app--test.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-s.onload = function() {
-initESW(null);
-};
-document.body.appendChild(s);
-} else {
-initESW('https://service.force.com');
-}
+    var initESW = function(gslbBaseURL) {
+        embedded_svc.settings.displayHelpButton = true; //O falso
+        embedded_svc.settings.language = ''; //Ad esempio, immettere 'en' o 'en-US'
+        //embedded_svc.settings.defaultMinimizedText = '...'; //(Per impostazione predefinita viene usato Chatta con un esperto)
+        //embedded_svc.settings.disabledMinimizedText = '...'; //(Per impostazione predefinita viene usato Agente offline)
+        //embedded_svc.settings.loadingText = ''; //(Per impostazione predefinita viene usato Caricamento)
+        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Imposta il dominio per la propria distribuzione in modo che i visitatori possano spostarsi all'interno dei sottodomini durante una sessione di chat)
+        // Impostazioni per Chat
+        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+            // Returns a valid button ID.
+        //};
+        //embedded_svc.settings.prepopulatedPrechatFields = {}; //Imposta l'autocompilazione dei campo del modulo pre-chat
+        //embedded_svc.settings.fallbackRouting = []; //Un array di ID pulsante, ID utente o userId_buttonId
+        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Per impostazione predefinita viene usato Contattaci)
+        embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+        embedded_svc.settings.entryFeature = 'LiveAgent';
+        embedded_svc.init(
+            'https://giamoel-app--test.my.salesforce.com',
+            'https://test-fgiacomel.cs100.force.com',
+            gslbBaseURL,
+            '00D1x0000000PIi',
+            'LiveAgent_Snap_in',
+            {
+                baseLiveAgentContentURL: 'https://c.la1-c1cs-fra.salesforceliveagent.com/content',
+                deploymentId: '5721x000000Cb4Y',
+                buttonId: '5731x000000CcNk',
+                baseLiveAgentURL: 'https://d.la1-c1cs-fra.salesforceliveagent.com/chat',
+                eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I1x000000Cay6EAC_17d8032a83b',
+                isOfflineSupportEnabled: true
+            }
+        );
+    };
+    if (!window.embedded_svc) {
+        var s = document.createElement('script');
+        s.setAttribute('src', 'https://giamoel-app--test.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+        s.onload = function() {
+            initESW(null);
+        };
+        document.body.appendChild(s);
+    } else {
+        initESW('https://service.force.com');
+    }
 </script>
 </body>
 </html>
